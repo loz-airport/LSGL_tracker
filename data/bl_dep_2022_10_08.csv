@@ -1,0 +1,2 @@
+ICAO24,call_sign,departure_time,departure_date,arrival_time,arrival_date,departure_airport_ICAO,destination_airport_ICAO,id
+46208f,FSF550Y,2022-10-08T12:05:00Z,2022-10-08,2022-10-08T12:40:23Z,2022-10-08,LSGL,LSZH,46208f_2022-10-08 14:05:00

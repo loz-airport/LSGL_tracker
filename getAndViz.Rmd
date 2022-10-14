@@ -1,0 +1,176 @@
+---
+title: "Open Sky API "
+date: " 2022"
+output: 
+  html_document:
+    code_folding: show
+    echo: TRUE
+    warning: FALSE
+    message: FALSE
+    toc: yes
+    toc_depth: 3
+    theme: simplex
+---
+
+0x4b27c0 
+HBPBK
+
+
+
+https://app02.bazl.admin.ch/web/bazl/fr/#/lfr/detail/HB-PBK-3106
+
+
+https://opensky-network.org/airport-profile?icao=LSGL
+
+
+https://opensky-network.org/airport-profile?icao=LSGG
+
+
+```{r setup, include=FALSE}
+usr <-  Sys.getenv("usr_osn")
+pwd <-  Sys.getenv("pwd_osn")
+tz <- "Europe/Zurich"
+  
+source("_helper.R")
+library(tidyverse)
+library(magrittr)
+library(knitr)
+library(purrr)
+library(openSkies)
+library(lubridate)
+```
+
+
+The given time interval must not be larger than seven days!
+
+
+
+```{r helper}
+get_osf_details <- function(
+  ii, 
+  timez = "CET"
+) {
+  tibble(
+    ICAO24 = ii$ICAO24,
+    call_sign = ii$call_sign,
+    departure_time = with_tz(ii$departure_time, timez),
+    departure_date = as.Date(departure_time,tz = timez),
+    arrival_time = with_tz(ii$arrival_time, timez),
+    arrival_date = as.Date(arrival_time,tz = timez)
+  )
+}
+
+```
+
+
+
+
+```{r get and wrangle flights BLS}
+end <- format(Sys.time()+(3600*24))
+start <- format(Sys.time() - (3600*24*32))
+
+bl_dep <- getAirportDepartures(
+  airport="LSGL", 
+  endTime=end,
+  startTime=start,
+  timeZone = tz,
+  useImpalaShell = TRUE, username = usr,
+  password = pwd
+)
+
+bl_arr <- getAirportArrivals(
+  airport="LSGL", 
+  endTime=end,
+  startTime=start,
+  timeZone = tz,
+  useImpalaShell = TRUE, username = usr,
+  password = pwd
+)
+
+bl_dep_df <- 1:length(bl_dep) %>%
+  map_df(function(iii) {
+    get_osf_details(bl_dep[[iii]]) %>%
+      mutate(idx = iii)
+  }) %>% 
+  arrange(departure_time)
+
+bl_arr_df <- 1:length(bl_arr) %>%
+  map_df(function(iii) {
+    get_osf_details(bl_arr[[iii]]) %>%
+      mutate(idx = iii)
+  }) %>% 
+  arrange(arrival_time)
+
+```
+
+
+```{r filter single day and get the state vectors}
+
+stopifnot(max(bl_arr_df$departure_date) ==
+            max(bl_dep_df$arrival_date))
+
+max_date <- max(bl_arr_df$departure_date)
+
+dep <- bl_dep_df %>% 
+  filter(departure_date == max_date)
+
+arr <- bl_arr_df %>% 
+  filter(arrival_date == max_date)
+
+
+dep_sv <- getAirportDepartures(
+  airport="LSGL", 
+  endTime = str_c(max_date, " 23:59:59"),
+  startTime = str_c(max_date, " 00:00:00"),
+  timeZone = tz,
+  includeStateVectors = T,
+  timeResolution = 60,
+  useImpalaShell = TRUE, username = usr,
+  password = pwd,
+  includeAirportsMetadata = T
+)
+
+arr_sv <- getAirportArrivals(
+  airport="LSGL", 
+  endTime = str_c(max_date, " 23:59:59"),
+  startTime = str_c(max_date, " 00:00:00"),
+  timeZone = tz,
+  includeStateVectors = T,
+  timeResolution = 60,
+  useImpalaShell = TRUE, username = usr,
+  password = pwd,
+  includeAirportsMetadata = T
+)
+
+stopifnot(length(arr_sv) > 0)
+stopifnot(length(dep_sv) > 0)
+
+
+trajectories <- lapply(dep_sv, function(f) f$state_vectors)
+
+
+dep_sv
+
+
+
+
+
+
+```
+
+```{r test }
+#https://journal.r-project.org/archive/2021/RJ-2021-095/RJ-2021-095.pdf
+
+ flights <- getAirportArrivals(
+   airport="EDDF", startTime="2018-01-29 12:00:00",
+   endTime="2018-01-29 24:00:00", timeZone="Europe/Berlin",
+   includeStateVectors = TRUE, timeResolution = 60,
+   useImpalaShell = TRUE, username = usr,
+   password = pwd)
+
+## We can then easily check the amount of flights
+length(flights) # 316 flights
+
+
+
+```

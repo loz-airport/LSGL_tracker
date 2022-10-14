@@ -1,0 +1,174 @@
+---
+title: "Open Sky API "
+date: " 2022"
+output: 
+  html_document:
+    code_folding: show
+    echo: TRUE
+    warning: FALSE
+    message: FALSE
+    toc: yes
+    toc_depth: 3
+    theme: simplex
+---
+
+https://opensky-network.org/airport-profile?icao=LSGL
+
+
+https://opensky-network.org/airport-profile?icao=LSGG
+
+
+```{r setup, include=FALSE}
+usr <-  Sys.getenv("usr_osn")
+pwd <-  Sys.getenv("pwd_osn")
+
+library(tidyverse)
+library(magrittr)
+library(stringr)
+library(knitr)
+library(openSkies)
+```
+
+
+The given time interval must not be larger than seven days!
+
+
+
+
+
+
+
+```{r get flights BLS}
+# workds
+getAirportArrivals(
+  airport="LSGL", 
+  startTime="2022-07-10 00:00:00", 
+  endTime="2022-07-10 23:5:00"
+)
+
+openSkies::getAirportArrivals(
+  airport="LSGL", 
+  startTime="2022-07-11 00:00:00", 
+  endTime="2022-07-12 23:00:00",
+  timeZone = "Europe/Zurich"
+)
+# 11
+
+getAirportArrivals(
+  airport="LSGL", 
+  startTime="2022-07-09 00:00:00", 
+  endTime="2022-07-10 23:00:00",
+)
+# 26
+
+df <- openSkies::getAirportArrivals(
+  airport="LSGL", 
+  startTime="2022-07-17 00:00:00", 
+  endTime="2022-07-20 23:00:00",
+    timeZone = "Europe/Zurich"
+)
+
+## realtime test 
+## locale-specific version of date()
+end <- format(Sys.time())
+start <- format(Sys.time() - (3600*24*14))
+
+getAirportDepartures(
+  airport="LSGL", 
+  endTime=end,
+  startTime=start,
+  timeZone = "Europe/Madrid",
+  # includeStateVectors = T, timeResolution = 60,
+  # useImpalaShell = TRUE, username = usr,
+  # password = pwd
+)
+
+getAirportArrivals(
+  airport="LSGG", 
+  startTime=start,
+  endTime=end,
+  # includeStateVectors = T, timeResolution = 60,
+  #useImpalaShell = TRUE, 
+  username = usr,
+  password = pwd
+)
+
+
+
+
+getAirportArrivals(
+  airport="LSGL", 
+  startTime="2022-07-18 00:00:00", 
+  endTime="2022-07-19 23:00:00",
+  includeStateVectors = T, timeResolution = 60,
+    useImpalaShell = TRUE, username = usr,
+  password = pwd
+)
+
+
+bl_arr_times <- sapply(
+  bl_arr, `[[`, "arrival_time", simplify=TRUE) 
+bl_arr <- bl_arr[order(bl_arr_times)]
+
+bl_dep_times <- sapply(
+  bl_dep, `[[`, "departure_time", simplify=TRUE) 
+bl_dep <- bl_dep[order(bl_dep_times)]
+
+
+
+
+bl_dep %>% 
+    map(~ with_tz(.x$departure_time,  "CET")) %>% 
+  unlist() %>% 
+  as.POSIXct(origin = "1970-01-01", tz = "CET")
+
+bl_dep %>% 
+    map_dbl(~ with_tz(.x$departure_time,  "CET")) %>% 
+  c() %>% 
+  as.POSIXct(origin = "1970-01-01")
+
+
+
+bl_arr %>% 
+    map(~ with_tz(.x$arrival_time,  "CET")) 
+
+with_tz(bl_dep[[1]]$departure_time, "CET")
+
+
+
+
+```
+
+
+
+
+
+```{r get flights BLS}
+getAirportMetadata("LSGL")
+
+flights <- getAirportArrivals(
+  airport="LSGL", 
+  startTime="2022-07-01 12:00:00",
+  endTime="2022-07-21 12:00:00",
+  # includeStateVectors = F, timeResolution = 60,
+  useImpalaShell = TRUE, username = usr,
+  password = pwd)
+
+getAirportArrivals(
+  airport="LSGL", 
+  startTime="2022-07-10 00:00:00", 
+  endTime="2022-07-10 23:00:00"
+)
+
+
+flights <- getAirportArrivals(airport="LSGG", 
+                              startTime="2022-03-20 12:00:00",
+                                endTime="2022-03-20 24:00:00",
+                               # includeStateVectors = F, timeResolution = 60,
+                                useImpalaShell = TRUE, username = usr,
+                                password = pwd)
+
+
+```
+
+
