@@ -1,4 +1,7 @@
-library(tidyverse)
+#library(tidyverse)
+library(dplyr)
+library(stringr)
+library(readr)
 library(purrr)
 library(openSkies)
 library(lubridate)
@@ -88,7 +91,8 @@ ldf2files <- function(
           ldf[[ii]] %>% 
             write_csv(out_file)
         } else {
-          if(verbose) cat("\n tmp_nrow:", tmp_nrow)
+          if(verbose) cat("\nNothing to save because tmp_nrow:", tmp_nrow,
+                          "\tcurrenlty fetched: ", nrow(ldf[[ii]]), " rwos")
         } 
       })
   }
