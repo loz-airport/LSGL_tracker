@@ -28,7 +28,7 @@ jobs:
         use-public-rspm: true
 
     - name: Create and populate .Renviron file
-    run: |
-      echo usr="$OPENSKY_USR" >> ~/.Renviron
-      echo pwd="$OPENSKY_PWD" >> ~/.Renviron     
-    shell: bash
+      run: |
+        echo usr="$OPENSKY_USR" >> ~/.Renviron
+        echo pwd="$OPENSKY_PWD" >> ~/.Renviron     
+      shell: bash
