@@ -49,4 +49,4 @@ jobs:
         git add data/*
         git commit -m 'Daily Open Sky Network LSGL flights data' || echo "No changes to commit"
         git push origin || echo "No changes to commit"
-
+        
