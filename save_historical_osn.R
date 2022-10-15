@@ -37,8 +37,80 @@ if(length(missingDates) > 0) {
         end = startEnd_df$end[ii], 
         verbose = verbose)      
     })
-
 }
+
+## concatenate everything available
+concatFiles(dir = "data", reg = "^bl_dep_\\d+",
+              col_spec = cols(
+                ICAO24 = col_character(),
+                call_sign = col_character(),
+                departure_time = col_datetime(format = ""),
+                departure_date = col_date(format = ""),
+                arrival_time = col_datetime(format = ""),
+                arrival_date = col_date(format = ""),
+                departure_airport_ICAO = col_character(),
+                destination_airport_ICAO = col_character(),
+                id = col_character())
+) %>% 
+  arrange(departure_time) %>% 
+  write_csv("data/bl_dep_all.csv")
+
+concatFiles(dir = "data", reg = "^bl_arr_\\d+",
+            col_spec = cols(
+              ICAO24 = col_character(),
+              call_sign = col_character(),
+              departure_time = col_datetime(format = ""),
+              departure_date = col_date(format = ""),
+              arrival_time = col_datetime(format = ""),
+              arrival_date = col_date(format = ""),
+              departure_airport_ICAO = col_character(),
+              destination_airport_ICAO = col_character(),
+              id = col_character())
+) %>% 
+  arrange(departure_time) %>% 
+  write_csv("data/bl_arr_all.csv")
+
+# STATE VECTORS
+# Take the last 4 months
+q_y_m <- seq(Sys.Date () -30 * 4, Sys.Date(), 1) %>% 
+  format("%Y_%m") %>% unique()
+
+concatFiles("data", 
+            str_c("^bl_dep_SV_(", str_c(q_y_m, collapse = "|"), ")"), 
+            col_spec = cols(
+  ICAO24 = col_character(),
+  longitude = col_double(),
+  latitude = col_double(),
+  requested_time = col_double(),
+  geo_altitude = col_double(),
+  velocity = col_double(),
+  special_purpose_indicator = col_logical(),
+  origin_country = col_logical(),
+  id = col_character(),
+  arrival_date = col_date(format = ""),
+  departure_date = col_date(format = "")
+)) %>% 
+  arrange(departure_date) %>% 
+  write_csv("data/bl_dep_SV_all.csv")
+
+
+concatFiles("data", 
+            str_c("^bl_arr_SV_(", str_c(q_y_m, collapse = "|"), ")"), 
+            col_spec = cols(
+              ICAO24 = col_character(),
+              longitude = col_double(),
+              latitude = col_double(),
+              requested_time = col_double(),
+              geo_altitude = col_double(),
+              velocity = col_double(),
+              special_purpose_indicator = col_logical(),
+              origin_country = col_logical(),
+              id = col_character(),
+              arrival_date = col_date(format = ""),
+              departure_date = col_date(format = "")
+            )) %>% 
+  arrange(arrival_date) %>% 
+  write_csv("data/bl_arr_SV_all.csv")
 
 
 

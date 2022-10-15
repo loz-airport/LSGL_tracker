@@ -92,7 +92,7 @@ ldf2files <- function(
             write_csv(out_file)
         } else {
           if(verbose) cat("\nNothing to save because tmp_nrow:", tmp_nrow,
-                          "\tcurrenlty fetched: ", nrow(ldf[[ii]]), " rwos")
+                          "\tcurrently fetched: ", nrow(ldf[[ii]]), " rows")
         } 
       })
   }
@@ -135,7 +135,7 @@ DatesMissingData <- function(
       out_files %>% 
         slice(ii) %>% 
         select(-date) %>% 
-        unlist() %>% map_lgl(checkFileData) %>% 
+        unlist() %>% map_lgl(checkFileData, nrow_threshold = 0) %>% 
         all()
     }) 
   
@@ -290,3 +290,28 @@ getSaveArrivalDeparture <- function(
     
   }
 }
+
+# concatenate files as a single data.frame
+concatFiles <- function(
+  dir = "data", 
+  reg = "^bl_dep_\\d+", 
+  col_spec = cols(
+    ICAO24 = col_character(),
+    call_sign = col_character(),
+    departure_time = col_datetime(format = ""),
+    departure_date = col_date(format = ""),
+    arrival_time = col_datetime(format = ""),
+    arrival_date = col_date(format = ""),
+    departure_airport_ICAO = col_character(),
+    destination_airport_ICAO = col_character(),
+    id = col_character())
+) {
+
+  list.files(dir, reg, full.names = T) %>% 
+    map(~ read_csv(.x, col_types = col_spec)) %>% 
+    bind_rows()
+}
+
+
+
+
