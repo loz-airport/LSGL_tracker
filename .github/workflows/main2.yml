@@ -4,7 +4,7 @@ on:
   push:
     branches: main
 
-name: Get Lausanne airport (LSGL) flights data from Open Sky Network
+name: Get Lausanne airport flights data from Open Sky
 
 jobs:
   generate-data:
@@ -28,18 +28,16 @@ jobs:
         use-public-rspm: true
 
     - name: Create and populate .Renviron file
-    run: |
-      echo usr="$OPENSKY_USR" >> ~/.Renviron
-      echo pwd="$OPENSKY_PWD" >> ~/.Renviron     
-    shell: bash
-
-# install remotes? https://uncharteddata.netlify.app/posts/2022-10-07-automating-workflows-with-github-actions/
+      run: |
+        echo usr="$OPENSKY_USR" >> ~/.Renviron
+        echo pwd="$OPENSKY_PWD" >> ~/.Renviron     
+      shell: bash
 
     - name: Restore packages
       shell: Rscript {0}
       run: |
         if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
-      renv::restore()
+        renv::restore()
 
     - name: Get data
       run: Rscript -e 'source("save_historical_osn.R")'
@@ -51,3 +49,4 @@ jobs:
         git add data/*
         git commit -m 'Daily Open Sky Network LSGL flights data' || echo "No changes to commit"
         git push origin || echo "No changes to commit"
+  
