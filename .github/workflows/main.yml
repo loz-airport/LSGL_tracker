@@ -1,7 +1,5 @@
 on:
   workflow_dispatch
-#  schedule:
-#    - cron: '27 3,8 * * *'
   push:
     branches: main
 
