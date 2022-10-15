@@ -1,0 +1,53 @@
+on:
+  schedule:
+    - cron: '27 3,8 * * *'
+  push:
+    branches: main
+
+name: Get Lausanne airport (LSGL) flights data from Open Sky Network
+
+jobs:
+  generate-data:
+    name: update data
+    runs-on: ubuntu-latest
+    timeout-minutes: 67
+
+    env:
+      RENV_PATHS_ROOT: ~/.local/share/renv
+      OPENSKY_USR: ${{ secrets.OPENSKY_USR }}
+      OPENSKY_PWD: ${{ secrets.OPENSKY_PWD }}
+
+    steps:
+
+    - uses: actions/checkout@v2
+    - uses: r-lib/actions/setup-r@v2
+      with:
+        # don't reinstall R
+        install-r: false
+        # use RStudio's CRAN mirror with precompiled binaries
+        use-public-rspm: true
+
+    - name: Create and populate .Renviron file
+    run: |
+      echo usr="$OPENSKY_USR" >> ~/.Renviron
+      echo pwd="$OPENSKY_PWD" >> ~/.Renviron     
+    shell: bash
+
+# install remotes? https://uncharteddata.netlify.app/posts/2022-10-07-automating-workflows-with-github-actions/
+
+    - name: Restore packages
+      shell: Rscript {0}
+      run: |
+        if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
+      renv::restore()
+
+    - name: Get data
+      run: Rscript -e 'source("save_historical_osn.R")'
+
+    - name: Commit results
+      run: |
+        git config --local user.email "actions@github.com"
+        git config --local user.name "GitHub Actions"
+        git add data/*
+        git commit -m 'Daily Open Sky Network LSGL flights data' || echo "No changes to commit"
+        git push origin || echo "No changes to commit"
