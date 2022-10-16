@@ -43,7 +43,7 @@ jobs:
         renv::restore()
         
     - name: Get data
-      run: Rscript -e 'source("save_historical_osn.R")'
+      run: Rscript -e 'source("R/save_historical_osn.R")'
 
     - name: Commit results
       run: |
