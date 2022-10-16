@@ -1,4 +1,4 @@
-source("_helper.R")
+source("R/_helper.R")
 
 # SETTINGS
 verbose <- T
