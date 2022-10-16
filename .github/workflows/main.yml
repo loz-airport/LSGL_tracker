@@ -34,9 +34,10 @@ jobs:
         echo pwd="$OPENSKY_PWD" >> ~/.Renviron     
       shell: bash
 
-    - name: Install libssh-dev for R OpenSkies
+    - name: Install libssh-dev for R OpenSkies & libcurl/libssl
       run: |
         sudo apt-get install -y libssh-dev
+        sudo apt-get -y install libcurl4-openssl-dev
       
     - name: Restore packages
       shell: Rscript {0}
