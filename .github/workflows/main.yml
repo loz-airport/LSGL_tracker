@@ -39,6 +39,9 @@ jobs:
         if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
         renv::restore()
 
+    - name: Install R dependencies
+      run: Rscript -e 'install.packages(c("dplyr","purrr", "stringr", "readr", "lubridate", "openSkies"))'
+        
     - name: Get data
       run: Rscript -e 'source("save_historical_osn.R")'
 
