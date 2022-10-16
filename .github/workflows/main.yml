@@ -33,14 +33,14 @@ jobs:
         echo pwd="$OPENSKY_PWD" >> ~/.Renviron     
       shell: bash
 
+    - name: Install R dependencies
+      run: Rscript -e 'install.packages(c("dplyr","purrr", "stringr", "readr", "lubridate", "openSkies"))'
+
     - name: Restore packages
       shell: Rscript {0}
       run: |
         if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
         renv::restore()
-
-    - name: Install R dependencies
-      run: Rscript -e 'install.packages(c("dplyr","purrr", "stringr", "readr", "lubridate", "openSkies"))'
         
     - name: Get data
       run: Rscript -e 'source("save_historical_osn.R")'
