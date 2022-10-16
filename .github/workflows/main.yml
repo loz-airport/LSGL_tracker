@@ -1,7 +1,7 @@
 on:
-  workflow_dispatch:
-#  schedule:
-#    - cron: '27 4,8 * * *'
+#  workflow_dispatch:
+  schedule:
+    - cron: '27 4,8 * * *'
   push:
     branches: main
 
