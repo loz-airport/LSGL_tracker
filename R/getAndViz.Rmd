@@ -67,7 +67,7 @@ get_osf_details <- function(
 
 ```{r get and wrangle flights BLS}
 end <- format(Sys.time()+(3600*24))
-start <- format(Sys.time() - (3600*24*32))
+start <- format(Sys.time() - (3600*24*3))
 
 bl_dep <- getAirportDepartures(
   airport="LSGL", 

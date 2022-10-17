@@ -168,9 +168,7 @@ getSaveArrivalDeparture <- function(
     airport=airport,
     endTime=end,
     startTime=start,
-    timeZone = tz,
-    username = usr,
-    password = pwd
+    timeZone = tz
   )
   if(!is.null(bl_dep) & length(bl_dep) > 0) {
     bl_dep_df <- os_airport2df(bl_dep)
@@ -232,9 +230,7 @@ getSaveArrivalDeparture <- function(
     airport=airport,
     endTime=end,
     startTime=start,
-    timeZone = tz,
-    username = usr,
-    password = pwd
+    timeZone = tz
   )
   
   if(!is.null(bl_arr) & length(bl_arr) > 0) {
