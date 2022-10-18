@@ -1,11 +1,11 @@
 on:
-  workflow_dispatch:
-#  schedule:
-#    - cron: '27 4,8 * * *'
+#  workflow_dispatch:
+  schedule:
+    - cron: '27 4,8 * * *'
   push:
     branches: main
 
-name: GH actions to fetch Lausanne airport flights data from Open Sky
+name: Fetch Lausanne airport flights data from Open Sky
 
 jobs:
   generate-data:
@@ -54,7 +54,7 @@ jobs:
         git config --local user.email "actions@github.com"
         git config --local user.name "GitHub Actions"
         git add data/*
-        git commit -am 'GH Actions Open Sky Network LSGL flights data $(date)' || echo "No changes to commit"
+        git commit -am "GH Actions Open Sky LSGL flights data $(date)" || echo "No changes to commit"
         git push origin master || echo "No changes to commit"
       env:
         REPO_KEY: ${{secrets.GITHUB_TOKEN}}
