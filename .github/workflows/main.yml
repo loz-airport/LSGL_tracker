@@ -11,7 +11,7 @@ jobs:
   generate-data:
     name: update data
     runs-on: ubuntu-latest
-    timeout-minutes: 67
+    timeout-minutes: 97
 
     env:
       RENV_PATHS_ROOT: ~/.local/share/renv
