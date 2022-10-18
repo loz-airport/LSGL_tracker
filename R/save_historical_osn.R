@@ -7,7 +7,6 @@ verbose <- T
 # timeRes <- 180
 # timeOut <- 7
 
-cat ("\nCheck GT secret, remove me! ", usr)
 
 nStartday <- 30 #32
 end <- str_c(Sys.Date()-1, " 23:59:59")
