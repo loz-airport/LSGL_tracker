@@ -36,6 +36,8 @@ jobs:
 
     - name: Install libssh-dev for R OpenSkies, libcurl/libssl & magick
       run: |
+        sudo sed -i 's/azure\.//' /etc/apt/sources.list
+        sudo apt-get update
         sudo apt-get install -y libssh-dev
         sudo apt-get -y install libcurl4-openssl-dev
         sudo apt-get -y install libmagick++-dev 
