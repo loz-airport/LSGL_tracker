@@ -1,0 +1,2 @@
+ICAO24,call_sign,departure_time,departure_date,arrival_time,arrival_date,departure_airport_ICAO,destination_airport_ICAO,id
+4b43b1,RGA04,2022-11-29T23:32:13Z,2022-11-30,2022-11-29T23:44:47Z,2022-11-30,LSGP,LSGL,4b43b1_2022-11-30 00:32:13
