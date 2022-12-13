@@ -1,0 +1,2 @@
+ICAO24,longitude,latitude,requested_time,geo_altitude,velocity,special_purpose_indicator,origin_country,id,arrival_date,departure_date
+4b43b1,6.64096069335938,46.5244461318194,1670859507,662.94,1.1503317546169,FALSE,NA,4b43b1_2022-12-12 16:38:27,2022-12-12,2022-12-12
