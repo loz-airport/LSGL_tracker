@@ -1,0 +1,2 @@
+ICAO24,call_sign,departure_time,departure_date,arrival_time,arrival_date,departure_airport_ICAO,destination_airport_ICAO,id
+44081f,AUA57A,2023-03-12T19:38:51Z,2023-03-12,2023-03-12T20:36:17Z,2023-03-12,LSGL,LOAU,44081f_2023-03-12 20:38:51
