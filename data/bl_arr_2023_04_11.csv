@@ -1,0 +1,2 @@
+ICAO24,call_sign,departure_time,departure_date,arrival_time,arrival_date,departure_airport_ICAO,destination_airport_ICAO,id
+3c4dc5,DLH1LL,2023-04-11T14:36:15Z,2023-04-11,2023-04-11T15:28:35Z,2023-04-11,EDDF,LSGL,3c4dc5_2023-04-11 16:36:15
