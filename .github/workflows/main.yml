@@ -10,7 +10,7 @@ name: Fetch Lausanne airport flights data from Open Sky
 jobs:
   generate-data:
     name: update data
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     timeout-minutes: 97
 
     env:
