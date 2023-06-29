@@ -10,7 +10,7 @@ name: Fetch Lausanne airport flights data from Open Sky
 jobs:
   generate-data:
     name: update data
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     timeout-minutes: 97
 
     env:
@@ -27,7 +27,7 @@ jobs:
         install-r: false
         # use RStudio's CRAN mirror with precompiled binaries
         use-public-rspm: true
-        
+
     - name: Create and populate .Renviron file
       run: |
         echo usr="$OPENSKY_USR" >> ~/.Renviron
@@ -61,3 +61,4 @@ jobs:
       env:
         REPO_KEY: ${{secrets.GITHUB_TOKEN}}
         username: github-actions
+        
