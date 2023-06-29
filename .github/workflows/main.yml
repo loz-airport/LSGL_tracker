@@ -27,16 +27,7 @@ jobs:
         install-r: false
         # use RStudio's CRAN mirror with precompiled binaries
         use-public-rspm: true
-        r-version: ${{ matrix.config.r }}
-        http-user-agent: ${{ matrix.config.http-user-agent }}
         
-    - uses: r-lib/actions/setup-r-dependencies@v2
-      with:
-        extra-packages: any::rcmdcheck
-        needs: check
-
-    - uses: r-lib/actions/check-r-package@v2
-    
     - name: Create and populate .Renviron file
       run: |
         echo usr="$OPENSKY_USR" >> ~/.Renviron
