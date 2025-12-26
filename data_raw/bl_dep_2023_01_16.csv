@@ -1,0 +1,2 @@
+ICAO24,call_sign,departure_time,departure_date,arrival_time,arrival_date,departure_airport_ICAO,destination_airport_ICAO,id
+4b4213,HBZAP,2023-01-16T10:27:35Z,2023-01-16,2023-01-16T11:13:24Z,2023-01-16,LSGL,LSZH,4b4213_2023-01-16 11:27:35

@@ -1,0 +1,2 @@
+ICAO24,call_sign,departure_time,departure_date,arrival_time,arrival_date,departure_airport_ICAO,destination_airport_ICAO,id
+40097e,BAW732,2023-04-01T15:41:37Z,2023-04-01,2023-04-01T16:07:30Z,2023-04-01,ELUS,LSGL,40097e_2023-04-01 17:41:37

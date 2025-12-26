@@ -1,0 +1,3 @@
+ICAO24,call_sign,departure_time,departure_date,arrival_time,arrival_date,departure_airport_ICAO,destination_airport_ICAO,id
+461fbd,FSF173P,2023-03-26T14:47:41Z,2023-03-26,2023-03-26T16:42:47Z,2023-03-26,NA,LSGL,461fbd_2023-03-26 16:47:41
+4b4271,HBZEF,2023-03-26T16:48:22Z,2023-03-26,2023-03-26T17:04:55Z,2023-03-26,LSGB,LSGL,4b4271_2023-03-26 18:48:22
