@@ -320,7 +320,14 @@ concatFiles <- function(
     id = col_character()
   )
 ) {
-  list.files(dir, reg, full.names = T) %>%
-    map(~ read_csv(.x, col_types = col_spec)) %>%
+  fls <- list.files(dir, reg, full.names = T)
+  
+  if (length(fls) == 0) {
+    header <- paste(names(col_spec$cols), collapse = ",")
+    return(read_csv(I(paste0(header, "\n")), col_types = col_spec, show_col_types = FALSE))
+  }
+  
+  fls %>%
+    map(~ read_csv(.x, col_types = col_spec, show_col_types = FALSE)) %>%
     bind_rows()
 }
