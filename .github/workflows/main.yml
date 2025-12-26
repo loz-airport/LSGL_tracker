@@ -5,7 +5,7 @@ on:
   push:
     branches: main
 
-name: Fetch Lausanne airport flights data from Open Sky
+name: Fetch Lausanne airport flights data from Open Sky 
 
 jobs:
   generate-data:
