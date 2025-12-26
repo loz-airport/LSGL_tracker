@@ -9,6 +9,12 @@
     ]
   },
   "Packages": {
+    "DBI": {
+      "Package": "DBI",
+      "Version": "1.2.3",
+      "Source": "Repository",
+      "Requirements": []
+    },
     "MASS": {
       "Package": "MASS",
       "Version": "7.3-57",
@@ -41,6 +47,12 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "45f0398006e83a5b10b72a90663d8d8c",
+      "Requirements": []
+    },
+    "RPresto": {
+      "Package": "RPresto",
+      "Version": "1.4.8",
+      "Source": "Repository",
       "Requirements": []
     },
     "Rcpp": {
@@ -84,6 +96,12 @@
       "Source": "Repository",
       "Requirements": []
     },
+    "blob": {
+      "Package": "blob",
+      "Version": "1.2.4",
+      "Source": "Repository",
+      "Requirements": []
+    },
     "cli": {
       "Package": "cli",
       "Version": "3.6.5",
@@ -122,10 +140,8 @@
     },
     "crayon": {
       "Package": "crayon",
-      "Version": "1.5.2",
+      "Version": "1.5.3",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "e8a1e41acf02548751f45c718d55aa6a",
       "Requirements": []
     },
     "credentials": {
@@ -140,15 +156,17 @@
       "Source": "Repository",
       "Requirements": []
     },
+    "dbplyr": {
+      "Package": "dbplyr",
+      "Version": "2.5.1",
+      "Source": "Repository",
+      "Requirements": []
+    },
     "dbscan": {
       "Package": "dbscan",
-      "Version": "1.1-10",
+      "Version": "1.2.4",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "a41eed892d408fda44afe96f7df2885e",
-      "Requirements": [
-        "Rcpp"
-      ]
+      "Requirements": []
     },
     "digest": {
       "Package": "digest",
@@ -222,17 +240,9 @@
     },
     "hms": {
       "Package": "hms",
-      "Version": "1.1.2",
+      "Version": "1.1.4",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "41100392191e1244b887878b533eea91",
-      "Requirements": [
-        "ellipsis",
-        "lifecycle",
-        "pkgconfig",
-        "rlang",
-        "vctrs"
-      ]
+      "Requirements": []
     },
     "httr": {
       "Package": "httr",
@@ -280,26 +290,15 @@
     },
     "lubridate": {
       "Package": "lubridate",
-      "Version": "1.8.0",
+      "Version": "1.9.4",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "2ff5eedb6ee38fb1b81205c73be1be5a",
-      "Requirements": [
-        "cpp11",
-        "generics"
-      ]
+      "Requirements": []
     },
     "magick": {
       "Package": "magick",
-      "Version": "2.7.3",
+      "Version": "2.9.0",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "56fbad418aa50939ed8c3028126af8d7",
-      "Requirements": [
-        "Rcpp",
-        "curl",
-        "magrittr"
-      ]
+      "Requirements": []
     },
     "magrittr": {
       "Package": "magrittr",
@@ -341,21 +340,9 @@
     },
     "openSkies": {
       "Package": "openSkies",
-      "Version": "1.1.6",
+      "Version": "1.2.2",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "19cd7048223d523e2369208b87e57886",
-      "Requirements": [
-        "R6",
-        "cluster",
-        "dbscan",
-        "ggmap",
-        "ggplot2",
-        "httr",
-        "magick",
-        "ssh",
-        "xml2"
-      ]
+      "Requirements": []
     },
     "openssl": {
       "Package": "openssl",
@@ -389,24 +376,15 @@
     },
     "prettyunits": {
       "Package": "prettyunits",
-      "Version": "1.1.1",
+      "Version": "1.2.0",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "95ef9167b75dde9d2ccc3c7528393e7e",
       "Requirements": []
     },
     "progress": {
       "Package": "progress",
-      "Version": "1.2.2",
+      "Version": "1.2.3",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "14dc9f7a3c91ebb14ec5bb9208a07061",
-      "Requirements": [
-        "R6",
-        "crayon",
-        "hms",
-        "prettyunits"
-      ]
+      "Requirements": []
     },
     "purrr": {
       "Package": "purrr",
@@ -474,6 +452,12 @@
       "Source": "Repository",
       "Requirements": []
     },
+    "stringdist": {
+      "Package": "stringdist",
+      "Version": "0.9.15",
+      "Source": "Repository",
+      "Requirements": []
+    },
     "stringi": {
       "Package": "stringi",
       "Version": "1.8.7",
@@ -507,6 +491,12 @@
     "tidyselect": {
       "Package": "tidyselect",
       "Version": "1.2.1",
+      "Source": "Repository",
+      "Requirements": []
+    },
+    "timechange": {
+      "Package": "timechange",
+      "Version": "0.3.0",
       "Source": "Repository",
       "Requirements": []
     },
