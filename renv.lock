@@ -130,17 +130,9 @@
     },
     "credentials": {
       "Package": "credentials",
-      "Version": "1.3.2",
+      "Version": "2.0.3",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "93762d0a34d78e6a025efdbfb5c6bb41",
-      "Requirements": [
-        "askpass",
-        "curl",
-        "jsonlite",
-        "openssl",
-        "sys"
-      ]
+      "Requirements": []
     },
     "curl": {
       "Package": "curl",
@@ -478,14 +470,9 @@
     },
     "ssh": {
       "Package": "ssh",
-      "Version": "0.8.1",
+      "Version": "0.9.4",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "61c68c216556df138d7457bb3dd53fc1",
-      "Requirements": [
-        "askpass",
-        "credentials"
-      ]
+      "Requirements": []
     },
     "stringi": {
       "Package": "stringi",
