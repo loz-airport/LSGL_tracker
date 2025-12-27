@@ -199,17 +199,22 @@ getSaveArrivalDeparture <- function(
     bl_dep_sv_l <- seq_len(nrow(bl_dep_df)) %>%
       map(function(ii) {
         if (verbose) cat("\tFetching SV for ", ii, "/", nrow(bl_dep_df))
-        getAircraftStateVectorsSeries(
-          bl_dep_df$ICAO24[ii],
-          bl_dep_df$departure_time[ii],
-          bl_dep_df$arrival_time[ii],
-          timeZone = tz,
-          timeResolution = timeRes,
-          username = usr,
-          password = pwd,
-          timeOut = timeOut,
-          maxQueryAttempts = 2
-        )
+        tryCatch({
+          getAircraftStateVectorsSeries(
+            bl_dep_df$ICAO24[ii],
+            bl_dep_df$departure_time[ii],
+            bl_dep_df$arrival_time[ii],
+            timeZone = tz,
+            timeResolution = timeRes,
+            username = usr,
+            password = pwd,
+            timeOut = timeOut,
+            maxQueryAttempts = 2
+          )
+        }, error = function(e) {
+          if (verbose) cat("\n\tError fetching SV: ", e$message)
+          NULL
+        })
       })
     bl_dep_sv_df <- os_aircraft_SV_2df(bl_dep_sv_l)
     bl_dep_sv_df <- left_join(
@@ -263,17 +268,22 @@ getSaveArrivalDeparture <- function(
     bl_arr_sv_l <- seq_len(nrow(bl_arr_df)) %>%
       map(function(ii) {
         if (verbose) cat("\tFetching SV for ", ii, "/", nrow(bl_arr_df))
-        getAircraftStateVectorsSeries(
-          bl_arr_df$ICAO24[ii],
-          bl_arr_df$departure_time[ii],
-          bl_arr_df$arrival_time[ii],
-          timeZone = tz,
-          timeResolution = timeRes,
-          username = usr,
-          password = pwd,
-          timeOut = timeOut,
-          maxQueryAttempts = 2
-        )
+        tryCatch({
+          getAircraftStateVectorsSeries(
+            bl_arr_df$ICAO24[ii],
+            bl_arr_df$departure_time[ii],
+            bl_arr_df$arrival_time[ii],
+            timeZone = tz,
+            timeResolution = timeRes,
+            username = usr,
+            password = pwd,
+            timeOut = timeOut,
+            maxQueryAttempts = 2
+          )
+        }, error = function(e) {
+          if (verbose) cat("\n\tError fetching SV: ", e$message)
+          NULL
+        })
       })
 
     bl_arr_sv_df <- os_aircraft_SV_2df(bl_arr_sv_l)
