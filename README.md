@@ -1,6 +1,6 @@
 # Lausanne Airport Flight Tracker 🦁✈️
 
-![Banner](DALL·E%202022-10-16%2021.10.11%20-%20A%20standing%20lion%20looking%20at%20a%20flying%20airplane%20in%20the%20style%20of%20vaporware.png)
+![Banner](LAFT_image.png)
 
 A data collection project that tracks all flights arriving and departing from Lausanne-Blécherette Airport (LSGL) using the OpenSky Network API. The project automatically collects historical flight data including aircraft positions, call signs, and flight paths.
 
