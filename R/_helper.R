@@ -207,7 +207,6 @@ getSaveArrivalDeparture <- function(
           timeResolution = timeRes,
           username = usr,
           password = pwd,
-          useImpalaShell = T,
           timeOut = timeOut,
           maxQueryAttempts = 2
         )
@@ -272,7 +271,6 @@ getSaveArrivalDeparture <- function(
           timeResolution = timeRes,
           username = usr,
           password = pwd,
-          useImpalaShell = T,
           timeOut = timeOut,
           maxQueryAttempts = 2
         )

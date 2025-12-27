@@ -74,7 +74,8 @@ bl_dep <- getAirportDepartures(
   endTime=end,
   startTime=start,
   timeZone = tz,
-  useImpalaShell = TRUE, username = usr,
+  timeZone = tz,
+  username = usr,
   password = pwd
 )
 
@@ -83,7 +84,8 @@ bl_arr <- getAirportArrivals(
   endTime=end,
   startTime=start,
   timeZone = tz,
-  useImpalaShell = TRUE, username = usr,
+  timeZone = tz,
+  username = usr,
   password = pwd
 )
 
@@ -125,7 +127,8 @@ dep_sv <- getAirportDepartures(
   timeZone = tz,
   includeStateVectors = T,
   timeResolution = 60,
-  useImpalaShell = TRUE, username = usr,
+  timeResolution = 60,
+  username = usr,
   password = pwd,
   includeAirportsMetadata = T
 )
@@ -137,7 +140,8 @@ arr_sv <- getAirportArrivals(
   timeZone = tz,
   includeStateVectors = T,
   timeResolution = 60,
-  useImpalaShell = TRUE, username = usr,
+  timeResolution = 60,
+  username = usr,
   password = pwd,
   includeAirportsMetadata = T
 )
@@ -165,7 +169,8 @@ dep_sv
    airport="EDDF", startTime="2018-01-29 12:00:00",
    endTime="2018-01-29 24:00:00", timeZone="Europe/Berlin",
    includeStateVectors = TRUE, timeResolution = 60,
-   useImpalaShell = TRUE, username = usr,
+   includeStateVectors = TRUE, timeResolution = 60,
+   username = usr,
    password = pwd)
 
 ## We can then easily check the amount of flights
