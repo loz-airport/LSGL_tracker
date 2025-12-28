@@ -1,0 +1,2 @@
+ICAO24,call_sign,departure_time,departure_date,arrival_time,arrival_date,departure_airport_ICAO,destination_airport_ICAO,id
+461fbd,FSF604F,2025-12-27T13:08:11Z,2025-12-27,2025-12-27T13:27:03Z,2025-12-27,LSGK,LSGL,461fbd_2025-12-27 14:08:11

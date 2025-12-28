@@ -192,40 +192,49 @@ getSaveArrivalDeparture <- function(
     username = usr,
     password = pwd
   )
-  if (!is.null(bl_dep) & length(bl_dep) > 0) {
+  if (!is.null(bl_dep) && length(bl_dep) > 0) {
     bl_dep_df <- os_airport2df(bl_dep)
     # SV
     if (verbose) cat("\n\tGet for these departures the corresponding state vectors")
     bl_dep_sv_l <- seq_len(nrow(bl_dep_df)) %>%
       map(function(ii) {
         if (verbose) cat("\tFetching SV for ", ii, "/", nrow(bl_dep_df))
-        tryCatch({
-          getAircraftStateVectorsSeries(
-            bl_dep_df$ICAO24[ii],
-            bl_dep_df$departure_time[ii],
-            bl_dep_df$arrival_time[ii],
-            timeZone = tz,
-            timeResolution = timeRes,
-            username = usr,
-            password = pwd,
-            timeOut = timeOut,
-            maxQueryAttempts = 2
-          )
-        }, error = function(e) {
-          if (verbose) cat("\n\tError fetching SV: ", e$message)
-          NULL
-        })
+        tryCatch(
+          {
+            getAircraftStateVectorsSeries(
+              bl_dep_df$ICAO24[ii],
+              bl_dep_df$departure_time[ii],
+              bl_dep_df$arrival_time[ii],
+              timeZone = tz,
+              timeResolution = timeRes,
+              username = usr,
+              password = pwd,
+              timeOut = timeOut,
+              maxQueryAttempts = 2
+            )
+          },
+          error = function(e) {
+            if (verbose) cat("\n\tError fetching SV: ", e$message)
+            NULL
+          }
+        )
       })
     bl_dep_sv_df <- os_aircraft_SV_2df(bl_dep_sv_l)
-    bl_dep_sv_df <- left_join(
-      bl_dep_sv_df,
-      bl_dep_df %>%
-        mutate(idx = row_number()) %>%
-        select(idx, id)
-    ) %>%
-      select(-idx)
 
-    stopifnot(all(unique(bl_dep_sv_df$id) %in% bl_dep_df$id))
+    # Only process state vectors if we have data
+    if (nrow(bl_dep_sv_df) > 0) {
+      bl_dep_sv_df <- left_join(
+        bl_dep_sv_df,
+        bl_dep_df %>%
+          mutate(idx = row_number()) %>%
+          select(idx, id)
+      ) %>%
+        select(-idx)
+
+      stopifnot(all(unique(bl_dep_sv_df$id) %in% bl_dep_df$id))
+    } else {
+      if (verbose) cat("\n\tNo state vectors available for departures")
+    }
 
     # Save each day as a different file
     if (verbose) cat("\nSave as different files")
@@ -237,7 +246,7 @@ getSaveArrivalDeparture <- function(
       verbose = verbose
     )
 
-    if (exists("bl_dep_sv_df")) {
+    if (exists("bl_dep_sv_df") && nrow(bl_dep_sv_df) > 0) {
       ldf2files(
         ldf = bl_dep_sv_df %>%
           left_join(bl_dep_df %>% select(arrival_date, departure_date, id)) %>%
@@ -260,7 +269,7 @@ getSaveArrivalDeparture <- function(
     password = pwd
   )
 
-  if (!is.null(bl_arr) & length(bl_arr) > 0) {
+  if (!is.null(bl_arr) && length(bl_arr) > 0) {
     bl_arr_df <- os_airport2df(bl_arr)
 
     # SV
@@ -268,35 +277,43 @@ getSaveArrivalDeparture <- function(
     bl_arr_sv_l <- seq_len(nrow(bl_arr_df)) %>%
       map(function(ii) {
         if (verbose) cat("\tFetching SV for ", ii, "/", nrow(bl_arr_df))
-        tryCatch({
-          getAircraftStateVectorsSeries(
-            bl_arr_df$ICAO24[ii],
-            bl_arr_df$departure_time[ii],
-            bl_arr_df$arrival_time[ii],
-            timeZone = tz,
-            timeResolution = timeRes,
-            username = usr,
-            password = pwd,
-            timeOut = timeOut,
-            maxQueryAttempts = 2
-          )
-        }, error = function(e) {
-          if (verbose) cat("\n\tError fetching SV: ", e$message)
-          NULL
-        })
+        tryCatch(
+          {
+            getAircraftStateVectorsSeries(
+              bl_arr_df$ICAO24[ii],
+              bl_arr_df$departure_time[ii],
+              bl_arr_df$arrival_time[ii],
+              timeZone = tz,
+              timeResolution = timeRes,
+              username = usr,
+              password = pwd,
+              timeOut = timeOut,
+              maxQueryAttempts = 2
+            )
+          },
+          error = function(e) {
+            if (verbose) cat("\n\tError fetching SV: ", e$message)
+            NULL
+          }
+        )
       })
 
     bl_arr_sv_df <- os_aircraft_SV_2df(bl_arr_sv_l)
 
-    bl_arr_sv_df <- left_join(
-      bl_arr_sv_df,
-      bl_arr_df %>%
-        mutate(idx = row_number()) %>%
-        select(idx, id)
-    ) %>%
-      select(-idx)
+    # Only process state vectors if we have data
+    if (nrow(bl_arr_sv_df) > 0) {
+      bl_arr_sv_df <- left_join(
+        bl_arr_sv_df,
+        bl_arr_df %>%
+          mutate(idx = row_number()) %>%
+          select(idx, id)
+      ) %>%
+        select(-idx)
 
-    stopifnot(all(unique(bl_arr_sv_df$id) %in% bl_arr_df$id))
+      stopifnot(all(unique(bl_arr_sv_df$id) %in% bl_arr_df$id))
+    } else {
+      if (verbose) cat("\n\tNo state vectors available for arrivals")
+    }
 
     # Save each day as a different file
     ldf2files(
@@ -305,7 +322,7 @@ getSaveArrivalDeparture <- function(
       base_file_name <- "bl_arr"
     )
 
-    if (exists("bl_arr_sv_df")) {
+    if (exists("bl_arr_sv_df") && nrow(bl_arr_sv_df) > 0) {
       ldf2files(
         ldf = bl_arr_sv_df %>%
           left_join(bl_arr_df %>% select(arrival_date, departure_date, id)) %>%
@@ -333,12 +350,12 @@ concatFiles <- function(
   )
 ) {
   fls <- list.files(dir, reg, full.names = T)
-  
+
   if (length(fls) == 0) {
     header <- paste(names(col_spec$cols), collapse = ",")
     return(read_csv(I(paste0(header, "\n")), col_types = col_spec, show_col_types = FALSE))
   }
-  
+
   fls %>%
     map(~ read_csv(.x, col_types = col_spec, show_col_types = FALSE)) %>%
     bind_rows()
