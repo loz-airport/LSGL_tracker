@@ -12,8 +12,6 @@ library(lubridate)
 usr <- Sys.getenv("OPENSKY_USR")
 pwd <- Sys.getenv("OPENSKY_PWD")
 
-cat("\n\nCheck GT secret, remove me!!! usr: ", usr)
-
 
 get_osf_details <- function(ii, timez = "CET") {
   tibble(
