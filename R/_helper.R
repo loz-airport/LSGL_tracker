@@ -5,6 +5,7 @@ library(readr)
 library(purrr)
 library(openSkies)
 library(lubridate)
+library(jsonlite)
 
 # usr <-  Sys.getenv("usr_osn")
 # pwd <-  Sys.getenv("pwd_osn")
@@ -357,4 +358,53 @@ concatFiles <- function(
   fls %>%
     map(~ read_csv(.x, col_types = col_spec, show_col_types = FALSE)) %>%
     bind_rows()
+}
+
+# Fetch aircraft metadata from OpenSky and Planespotters
+get_aircraft_metadata <- function(icao24, verbose = FALSE) {
+  if (verbose) cat("\nFetching metadata for:", icao24)
+
+  # 1. OpenSky Metadata
+  os_meta <- tryCatch(
+    {
+      getAircraftMetadata(icao24)
+    },
+    error = function(e) {
+      if (verbose) cat("\n\tOpenSky error:", e$message)
+      NULL
+    }
+  )
+
+  # 2. Planespotters Photo
+  photo_url <- tryCatch(
+    {
+      ps_url <- paste0("https://api.planespotters.net/pub/photos/hex/", icao24)
+      res <- fromJSON(ps_url)
+      if (!is.null(res) && !is.null(res$photos) && length(res$photos) > 0) {
+        res$photos$thumbnail_large$src[1]
+      } else {
+        NA_character_
+      }
+    },
+    error = function(e) {
+      if (verbose) cat("\n\tPlanespotters error:", e$message)
+      NA_character_
+    }
+  )
+
+  if (is.null(os_meta)) {
+    return(tibble(
+      ICAO24 = icao24,
+      model = NA_character_,
+      origin_country = NA_character_,
+      photo_url = photo_url
+    ))
+  }
+
+  tibble(
+    ICAO24 = icao24,
+    model = ifelse(is.null(os_meta$model), NA_character_, os_meta$model),
+    origin_country = ifelse(is.null(os_meta$origin_country), NA_character_, os_meta$origin_country),
+    photo_url = photo_url
+  )
 }
