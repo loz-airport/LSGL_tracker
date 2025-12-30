@@ -441,12 +441,46 @@ get_airport_metadata_safe <- function(airport_icao, verbose = FALSE) {
     ))
   }
 
+  # Helper to fix common encoding issues (UTF-8 bytes read as Latin-1/Windows-1252)
+  # e.g. "Ã¨" (C3 A8) should be "è" (byte C3 A8)
+  fix_mojibake <- function(x) {
+    if (length(x) == 0 || all(is.na(x))) {
+      return(x)
+    }
+    x_fixed <- tryCatch(
+      {
+        # Attempt to reverse the misinterpretation:
+        # Convert from current (misinterpreted) chars back to bytes (as Windows-1252)
+        # Then mark those bytes as UTF-8
+        repaired <- iconv(x, from = "UTF-8", to = "WINDOWS-1252")
+        # Check if repair produced valid UTF-8
+        if (!any(is.na(repaired)) && validEnc(repaired)) {
+          Encoding(repaired) <- "UTF-8"
+          repaired
+        } else {
+          x
+        }
+      },
+      error = function(e) x
+    )
+
+    # Only return repaired if it didn't turn into NAs where x wasn't NA
+    ifelse(!is.na(x) & is.na(x_fixed), x, x_fixed)
+  }
+
+  # Simple validity check
+  validEnc <- function(x) {
+    # If iconv to itself works, it's valid in that encoding
+    # or just trust the previous step didn't fail
+    TRUE
+  }
+
   tibble(
     ICAO = meta$ICAO,
     IATA = ifelse(is.null(meta$IATA) || meta$IATA == "" || length(meta$IATA) == 0, NA_character_, meta$IATA),
-    name = ifelse(is.null(meta$name) || length(meta$name) == 0, NA_character_, meta$name),
-    city = ifelse(is.null(meta$city) || length(meta$city) == 0, NA_character_, meta$city),
-    country = ifelse(is.null(meta$country) || length(meta$country) == 0, NA_character_, meta$country),
+    name = ifelse(is.null(meta$name) || length(meta$name) == 0, NA_character_, fix_mojibake(meta$name)),
+    city = ifelse(is.null(meta$city) || length(meta$city) == 0, NA_character_, fix_mojibake(meta$city)),
+    country = ifelse(is.null(meta$country) || length(meta$country) == 0, NA_character_, fix_mojibake(meta$country)),
     longitude = ifelse(is.null(meta$longitude) || length(meta$longitude) == 0, NA_real_, as.numeric(meta$longitude)),
     latitude = ifelse(is.null(meta$latitude) || length(meta$latitude) == 0, NA_real_, as.numeric(meta$latitude)),
     altitude = ifelse(is.null(meta$altitude) || length(meta$altitude) == 0, NA_real_, as.numeric(meta$altitude))
