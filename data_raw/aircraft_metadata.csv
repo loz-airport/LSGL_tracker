@@ -14,18 +14,20 @@ ICAO24,call_sign,model,origin_country,photo_url
 46104c,OHGEM,NA,NA,NA
 461553,FSF802A,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/49412/1776832_0fb8eb6023_280.jpg
 461fbd,FSF604F,,Finland,https://t.plnspttrs.net/22892/1800304_b3d3916b0c_280.jpg
-4627c1,FSF478A,,Finland,https://t.plnspttrs.net/33448/1800438_4884e9b7a6_280.jpg
+4627c1,NA,NA,Finland,https://t.plnspttrs.net/33448/1800438_4884e9b7a6_280.jpg
 462d44,FSF709A,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/13970/1525640_e7d2a4d825_280.jpg
 462dd1,OHRJD,,Finland,https://t.plnspttrs.net/45644/1822419_ae20eb8344_280.jpg
-46316e,FSF432A,PC-12/47E NG,Finland,https://t.plnspttrs.net/34201/1864542_4f8758dc66_280.jpg
-463fc8,FSF814D,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/04396/1779975_64f09f738b_280.jpg
+46316e,FSF413Z,PC-12/47E NG,Finland,https://t.plnspttrs.net/34201/1864542_4f8758dc66_280.jpg
+463fc8,FSF869K,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/04396/1779975_64f09f738b_280.jpg
 49d5e2,OKOUT,Pilatus PC-12 NGX,Czechia,NA
 4b059a,HBCDE,F177RG,Switzerland,https://t.plnspttrs.net/32383/1205300_43c0f084e7_280.jpg
+4b0b24,HBEFS,CEA DR 220,Switzerland,NA
 4b0c39,HBEQJ,,Switzerland,NA
 4b0e27,PIZ42,Pilatus PC-12 NGX,Switzerland,https://t.plnspttrs.net/07832/1808083_662320d15d_280.jpg
 4b0e59,HBFLH,PC-6/B2-H4,Switzerland,https://t.plnspttrs.net/30951/1851802_1be1d0aa85_280.jpg
 4b0f7e,HBFWO,,Switzerland,https://t.plnspttrs.net/20687/1528068_5b4dfdb9fb_280.jpg
 4b0f8e,HBFXE,Pilatus PC-12 NGX,Switzerland,https://t.plnspttrs.net/39250/1509724_23b502f1fa_280.jpg
+4b169a,SWR3ZK,A321-212,Switzerland,https://t.plnspttrs.net/09735/1849278_d409c3e4eb_280.jpg
 4b1af2,HBKFI,ROBIN DR 400/140 B,Switzerland,https://t.plnspttrs.net/33499/1605005_231c3e9d18_280.jpg
 4b1bdd,HBKOJ,DR-400/140B Major,Switzerland,https://t.plnspttrs.net/33048/1661727_a208319904_280.jpg
 4b1bdf,HBKOL,TBM700 B,Switzerland,https://t.plnspttrs.net/47840/361507_6ed80536c8_280.jpg
@@ -43,7 +45,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b3302,RGA15,Airbus Helicopters H145,Switzerland,NA
 4b3303,RGA04,Airbus Helicopters H145,Switzerland,NA
 4b3305,RGA18,NA,NA,NA
-4b34c2,HBTZM,Cessna Turbo Skylane TC,Switzerland,NA
+4b34c2,NA,Cessna Turbo Skylane TC,Switzerland,NA
 4b3510,HBUCM,AA-5B,Switzerland,NA
 4b39c9,HBVWZ,510,Switzerland,https://t.plnspttrs.net/24063/1384511_49f5de93e8_280.jpg
 4b3d0a,HBXDA,Bell 429 GlobalRanger,Switzerland,https://t.plnspttrs.net/36981/1862508_029b64d190_280.jpg
