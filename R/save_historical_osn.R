@@ -162,7 +162,7 @@ if (nrow(all_flights) > 0) {
 
   # Load existing metadata
   meta_file <- "data_raw/aircraft_metadata.csv"
-  meta_col_spec <- cols(
+  meta_col_spec <- cols_only(
     ICAO24 = col_character(),
     call_sign = col_character(),
     model = col_character(),
@@ -238,7 +238,7 @@ if (nrow(all_flights) > 0) {
 
   # Load existing airport metadata
   airport_meta_file <- "data_raw/airport_metadata.csv"
-  airport_meta_col_spec <- cols(
+  airport_meta_col_spec <- cols_only(
     ICAO = col_character(),
     IATA = col_character(),
     name = col_character(),
@@ -284,5 +284,7 @@ if (nrow(all_flights) > 0) {
     if (verbose) cat("\nAirport metadata saved to", airport_meta_file, "\n")
   } else {
     if (verbose) cat("\nNo new airport metadata to fetch")
+    # Write back anyway to clean up potential extra columns from the file
+    write_csv(existing_airport_meta %>% arrange(ICAO), airport_meta_file)
   }
 }
