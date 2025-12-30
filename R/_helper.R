@@ -408,3 +408,47 @@ get_aircraft_metadata <- function(icao24, verbose = FALSE) {
     photo_url = photo_url
   )
 }
+
+# Fetch airport metadata from OpenSky
+get_airport_metadata_safe <- function(airport_icao, verbose = FALSE) {
+  if (verbose) cat("\nFetching metadata for:", airport_icao)
+
+  # Check if airport_icao is valid
+  if (is.na(airport_icao) || airport_icao == "") {
+    return(NULL)
+  }
+
+  meta <- tryCatch(
+    {
+      getAirportMetadata(airport_icao)
+    },
+    error = function(e) {
+      if (verbose) cat("\n\tOpenSky error for airport:", airport_icao, "-", e$message)
+      NULL
+    }
+  )
+
+  if (is.null(meta)) {
+    return(tibble(
+      ICAO = airport_icao,
+      IATA = NA_character_,
+      name = NA_character_,
+      city = NA_character_,
+      country = NA_character_,
+      longitude = NA_real_,
+      latitude = NA_real_,
+      altitude = NA_real_
+    ))
+  }
+
+  tibble(
+    ICAO = meta$ICAO,
+    IATA = ifelse(is.null(meta$IATA) || meta$IATA == "" || length(meta$IATA) == 0, NA_character_, meta$IATA),
+    name = ifelse(is.null(meta$name) || length(meta$name) == 0, NA_character_, meta$name),
+    city = ifelse(is.null(meta$city) || length(meta$city) == 0, NA_character_, meta$city),
+    country = ifelse(is.null(meta$country) || length(meta$country) == 0, NA_character_, meta$country),
+    longitude = ifelse(is.null(meta$longitude) || length(meta$longitude) == 0, NA_real_, as.numeric(meta$longitude)),
+    latitude = ifelse(is.null(meta$latitude) || length(meta$latitude) == 0, NA_real_, as.numeric(meta$latitude)),
+    altitude = ifelse(is.null(meta$altitude) || length(meta$altitude) == 0, NA_real_, as.numeric(meta$altitude))
+  )
+}

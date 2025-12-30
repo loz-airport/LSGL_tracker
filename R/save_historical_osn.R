@@ -221,3 +221,68 @@ if (nrow(all_flights) > 0) {
     if (verbose) cat("\nMetadata updated with latest call signs.\n")
   }
 }
+
+# AIRPORT METADATA
+# Collect unique airports seen in the last 30 days
+if (verbose) cat("\n\n--- AIRPORT METADATA ---")
+
+if (nrow(all_flights) > 0) {
+  # Extract unique airports (both departure and destination) from the last 30 days
+  unique_airports <- c(all_flights$departure_airport_ICAO, all_flights$destination_airport_ICAO) %>%
+    unique() %>%
+    na.omit() %>%
+    as.character()
+
+  # Remove empty strings if any
+  unique_airports <- unique_airports[unique_airports != ""]
+
+  # Load existing airport metadata
+  airport_meta_file <- "data_raw/airport_metadata.csv"
+  airport_meta_col_spec <- cols(
+    ICAO = col_character(),
+    IATA = col_character(),
+    name = col_character(),
+    city = col_character(),
+    country = col_character(),
+    longitude = col_double(),
+    latitude = col_double(),
+    altitude = col_double()
+  )
+
+  if (file.exists(airport_meta_file)) {
+    existing_airport_meta <- read_csv(airport_meta_file, col_types = airport_meta_col_spec, show_col_types = F)
+  } else {
+    existing_airport_meta <- tibble(
+      ICAO = character(),
+      IATA = character(),
+      name = character(),
+      city = character(),
+      country = character(),
+      longitude = numeric(),
+      latitude = numeric(),
+      altitude = numeric()
+    )
+  }
+
+  # Identify airports needing metadata
+  airports_to_fetch <- setdiff(unique_airports, existing_airport_meta$ICAO)
+
+  if (length(airports_to_fetch) > 0) {
+    if (verbose) cat("\nFetching metadata for ", length(airports_to_fetch), " airports")
+
+    new_airport_meta <- airports_to_fetch %>%
+      map_df(~ get_airport_metadata_safe(.x, verbose = verbose))
+
+    # Merge with existing, prioritize new data
+    updated_airport_meta <- bind_rows(
+      existing_airport_meta,
+      new_airport_meta
+    ) %>%
+      arrange(ICAO)
+
+    write_csv(updated_airport_meta, airport_meta_file)
+    if (verbose) cat("\nAirport metadata saved to", airport_meta_file, "\n")
+  } else {
+    if (verbose) cat("\nNo new airport metadata to fetch")
+  }
+}
