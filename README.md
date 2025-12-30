@@ -1,133 +1,159 @@
-# Lausanne Airport Flight Tracker 🦁✈️
+# Suivi des vols de l'aéroport de Lausanne 🦁✈️
 
-![Banner](LAFT_image.png)
+![Bannière](LAFT_image.png)
 
-A data collection project that tracks all flights arriving and departing from Lausanne-Blécherette Airport (LSGL) using the OpenSky Network API. The project automatically collects historical flight data including aircraft positions, call signs, and flight paths.
+Un projet de collecte de données qui suit tous les vols arrivant et partant de l'aéroport de Lausanne-Blécherette (LSGL) à l'aide de l'API OpenSky Network. Le projet collecte automatiquement les données historiques de vol, y compris les positions des aéronefs, les indicatifs d'appel et les trajectoires de vol.
 
-## 📊 What This Repository Does
+Ce projet a été devéloppé en R originellement. Il est maintenu, vibe codé et documenté à l'aide d’Antigravity & Gemini.  
 
-This repository:
-- **Automatically fetches** flight data from the [OpenSky Network API](https://opensky-network.org) for LSGL airport
-- **Runs daily** via GitHub Actions to collect and update historical flight records
-- **Stores** both basic flight information (arrivals/departures) and detailed position data (state vectors)
-- **Maintains** a comprehensive historical dataset dating back to September 2022
+## 📊 Ce que fait ce repo
 
-## 🗂️ Repository Structure
+Ce dépôt :
+- **Récupère automatiquement** les données de vol depuis l'[API OpenSky Network](https://opensky-network.org) pour l'aéroport LSGL
+- **S'exécute quotidiennement** via GitHub Actions pour collecter et mettre à jour les enregistrements de vols historiques
+- **Stocke** à la fois les informations de base sur les vols (arrivées/départs) et les données de position détaillées (vecteurs d'état)
+- **Maintient** un ensemble de données historiques complet remontant à septembre 2022
+
+## 🗂️ Structure du dépôt
 
 ```
 .
-├── data_raw/                  # All collected flight data (CSV files)
-│   ├── bl_arr_YYYY_MM_DD.csv  # Daily arrival flights
-│   ├── bl_dep_YYYY_MM_DD.csv  # Daily departure flights
-│   ├── bl_arr_SV_YYYY_MM_DD.csv  # Daily arrival state vectors (GPS positions)
-│   ├── bl_dep_SV_YYYY_MM_DD.csv  # Daily departure state vectors
-│   ├── bl_arr_all.csv         # Consolidated arrivals
-│   ├── bl_dep_all.csv         # Consolidated departures
-│   ├── bl_arr_SV_all.csv      # Consolidated arrival state vectors
-│   └── bl_dep_SV_all.csv      # Consolidated departure state vectors
-├── R/                         # R scripts for data collection
-│   ├── _helper.R              # Helper functions for OpenSky API
-│   ├── save_historical_osn.R  # Main script to fetch and save data
-│   └── getAndViz.Rmd          # Data exploration and visualization notebook
-├── .github/workflows/         # Automated data collection
-│   └── main.yml               # GitHub Actions workflow (runs twice daily)
-└── README.md                  # This file
+├── data_raw/                  # Toutes les données de vol collectées (fichiers CSV)
+│   ├── bl_arr_YYYY_MM_DD.csv  # Vols d'arrivée quotidiens
+│   ├── bl_dep_YYYY_MM_DD.csv  # Vols de départ quotidiens
+│   ├── bl_arr_SV_YYYY_MM_DD.csv  # Vecteurs d'état d'arrivée quotidiens (positions GPS)
+│   ├── bl_dep_SV_YYYY_MM_DD.csv  # Vecteurs d'état de départ quotidiens
+│   ├── bl_arr_all.csv         # Arrivées consolidées
+│   ├── bl_dep_all.csv         # Départs consolidés
+│   ├── bl_arr_SV_all.csv      # Vecteurs d'état d'arrivée consolidés
+│   └── bl_dep_SV_all.csv      # Vecteurs d'état de départ consolidés
+├── R/                         # Scripts R pour la collecte de données
+│   ├── _helper.R              # Fonctions auxiliaires pour l'API OpenSky
+│   ├── save_historical_osn.R  # Script principal pour récupérer et sauvegarder les données
+│   └── getAndViz.Rmd          # Notebook d'exploration et de visualisation des données
+├── .github/workflows/         # Collecte de données automatisée
+│   └── main.yml               # Workflow GitHub Actions (s'exécute deux fois par jour)
+└── README.md                  # Ce fichier
 ```
 
-## 📁 Data Structure
+## 📁 Structure des données
 
-### Flight Data Files
+### Fichiers de données de vol
 
-#### Arrivals and Departures (`bl_arr_*.csv` and `bl_dep_*.csv`)
+#### Arrivées et Départs (`bl_arr_*.csv` et `bl_dep_*.csv`)
 
-Basic flight information for each arrival or departure.
+Informations de base sur le vol pour chaque arrivée ou départ.
 
-**Columns:**
-| Column | Type | Description |
+**Colonnes :**
+| Colonne | Type | Description |
 |--------|------|-------------|
-| `ICAO24` | String | Unique 24-bit ICAO aircraft identifier (e.g., `4b4326`) |
-| `call_sign` | String | Flight call sign (e.g., `HBZLE`) |
-| `departure_time` | DateTime | Actual departure time (UTC) |
-| `departure_date` | Date | Departure date |
-| `arrival_time` | DateTime | Actual arrival time (UTC) |
-| `arrival_date` | Date | Arrival date |
-| `departure_airport_ICAO` | String | ICAO code of departure airport (e.g., `LSGL`) |
-| `destination_airport_ICAO` | String | ICAO code of destination airport |
-| `id` | String | Unique flight identifier: `{ICAO24}_{departure_time}` |
+| `ICAO24` | Chaîne | Identifiant unique d'aéronef ICAO 24-bit (ex. : `4b4326`) |
+| `call_sign` | Chaîne | Indicatif d'appel du vol (ex. : `HBZLE`) |
+| `departure_time` | DateTime | Heure réelle de départ (UTC) |
+| `departure_date` | Date | Date de départ |
+| `arrival_time` | DateTime | Heure réelle d'arrivée (UTC) |
+| `arrival_date` | Date | Date d'arrivée |
+| `departure_airport_ICAO` | Chaîne | Code ICAO de l'aéroport de départ (ex. : `LSGL`) |
+| `destination_airport_ICAO` | Chaîne | Code ICAO de l'aéroport de destination |
+| `id` | Chaîne | Identifiant unique de vol : `{ICAO24}_{departure_time}` |
 
-**Example:**
+**Exemple :**
 ```csv
 ICAO24,call_sign,departure_time,departure_date,arrival_time,arrival_date,departure_airport_ICAO,destination_airport_ICAO,id
 4b4326,HBZLE,2022-09-10T07:12:33Z,2022-09-10,2022-09-10T08:11:58Z,2022-09-10,LSZM,LSGL,4b4326_2022-09-10 09:12:33
 ```
 
-#### State Vectors (`bl_arr_SV_*.csv` and `bl_dep_SV_*.csv`)
+#### Vecteurs d'état (`bl_arr_SV_*.csv` et `bl_dep_SV_*.csv`)
 
-GPS position data sampled at regular intervals (typically every 3 minutes) during each flight.
+Données de position GPS échantillonnées à intervalles réguliers (généralement toutes les 3 minutes) pendant chaque vol.
 
-**Columns:**
-| Column | Type | Description |
+**Colonnes :**
+| Colonne | Type | Description |
 |--------|------|-------------|
-| `ICAO24` | String | Aircraft identifier |
-| `longitude` | Float | GPS longitude (decimal degrees) |
-| `latitude` | Float | GPS latitude (decimal degrees) |
-| `requested_time` | Integer | Unix timestamp of position measurement |
-| `geo_altitude` | Float | Altitude in meters (barometric) |
-| `velocity` | Float | Ground speed in m/s |
-| `special_purpose_indicator` | Boolean | Special purpose indicator |
-| `origin_country` | String | Country of aircraft registration |
-| `id` | String | Flight identifier (matches flight data files) |
-| `arrival_date` | Date | Flight arrival date |
-| `departure_date` | Date | Flight departure date |
+| `ICAO24` | Chaîne | Identifiant de l'aéronef |
+| `longitude` | Flottant | Longitude GPS (degrés décimaux) |
+| `latitude` | Flottant | Latitude GPS (degrés décimaux) |
+| `requested_time` | Entier | Horodatage Unix de la mesure de position |
+| `geo_altitude` | Flottant | Altitude en mètres (barométrique) |
+| `velocity` | Flottant | Vitesse au sol en m/s |
+| `special_purpose_indicator` | Booléen | Indicateur d'usage spécial |
+| `origin_country` | Chaîne | Pays d'immatriculation de l'aéronef |
+| `id` | Chaîne | Identifiant de vol (correspond aux fichiers de données de vol) |
+| `arrival_date` | Date | Date d'arrivée du vol |
+| `departure_date` | Date | Date de départ du vol |
 
-**Example:**
+**Exemple :**
 ```csv
 ICAO24,longitude,latitude,requested_time,geo_altitude,velocity,special_purpose_indicator,origin_country,id,arrival_date,departure_date
 4b43ad,6.22727,46.38366,1666246299,NA,0,FALSE,NA,4b43ad_2022-10-20 08:11:39,2022-10-20,2022-10-20
 ```
 
-### File Naming Convention
+#### Fichiers de métadonnées (`aircraft_metadata.csv` et `airport_metadata.csv`)
 
-- `bl_arr_YYYY_MM_DD.csv` - Arrivals for specific date
-- `bl_dep_YYYY_MM_DD.csv` - Departures for specific date
-- `bl_arr_SV_YYYY_MM_DD.csv` - State vectors for arrivals on specific date
-- `bl_dep_SV_YYYY_MM_DD.csv` - State vectors for departures on specific date
-- `*_all.csv` files - Consolidated data across all dates
+Métadonnées détaillées pour les aéronefs et les aéroports rencontrés dans les données de vol (mises à jour pour les 30 derniers jours).
 
-## 🚀 Using the Data
+**Métadonnées des aéronefs (`aircraft_metadata.csv`) :**
+| Colonne | Type | Description |
+|--------|------|-------------|
+| `ICAO24` | Chaîne | Identifiant unique d'aéronef ICAO 24-bit |
+| `model` | Chaîne | Modèle d'aéronef (ex. : `Pilatus PC-12/47E`) |
+| `origin_country` | Chaîne | Pays d'immatriculation |
+| `photo_url` | Chaîne | URL vers une photo miniature de l'aéronef (provenant de Planespotters.net) |
 
-### Quick Start with R
+**Métadonnées des aéroports (`airport_metadata.csv`) :**
+| Colonne | Type | Description |
+|--------|------|-------------|
+| `ICAO` | Chaîne | Code aéroportuaire ICAO (ex. : `LSGL`) |
+| `IATA` | Chaîne | Code aéroportuaire IATA (ex. : `QLS`) |
+| `name` | Chaîne | Nom de l'aéroport |
+| `city` | Chaîne | Ville desservie par l'aéroport |
+| `country` | Chaîne | Pays où se trouve l'aéroport |
+| `longitude` | Flottant | Longitude de l'aéroport |
+| `latitude` | Flottant | Latitude de l'aéroport |
+| `altitude` | Flottant | Altitude de l'aéroport (mètres) |
+
+### Convention de nommage des fichiers
+
+- `bl_arr_YYYY_MM_DD.csv` - Arrivées pour une date spécifique
+- `bl_dep_YYYY_MM_DD.csv` - Départs pour une date spécifique
+- `bl_arr_SV_YYYY_MM_DD.csv` - Vecteurs d'état pour les arrivées à une date spécifique
+- `bl_dep_SV_YYYY_MM_DD.csv` - Vecteurs d'état pour les départs à une date spécifique
+- Fichiers `*_all.csv` - Données consolidées sur toutes les dates
+
+## 🚀 Utilisation des données
+
+### Démarrage rapide avec R
 
 ```r
-# Load arrivals data
+# Charger les données d'arrivée
 library(readr)
 arrivals <- read_csv("data_raw/bl_arr_all.csv")
 
-# Load departures data
+# Charger les données de départ
 departures <- read_csv("data_raw/bl_dep_all.csv")
 
-# Load state vectors for arrivals
+# Charger les vecteurs d'état pour les arrivées
 arrival_positions <- read_csv("data_raw/bl_arr_SV_all.csv")
 ```
 
-### Quick Start with Python
+### Démarrage rapide avec Python
 
 ```python
 import pandas as pd
 
-# Load arrivals data
+# Charger les données d'arrivée
 arrivals = pd.read_csv("data_raw/bl_arr_all.csv")
 
-# Load departures data
+# Charger les données de départ
 departures = pd.read_csv("data_raw/bl_dep_all.csv")
 
-# Load state vectors for arrivals
+# Charger les vecteurs d'état pour les arrivées
 arrival_positions = pd.read_csv("data_raw/bl_arr_SV_all.csv")
 ```
 
-### Common Use Cases
+### Cas d'utilisation courants
 
-#### 1. Count flights per day
+#### 1. Compter les vols par jour
 ```r
 library(dplyr)
 
@@ -139,87 +165,87 @@ daily_traffic <- departures %>%
   )
 ```
 
-#### 2. Find most common routes
+#### 2. Trouver les routes les plus courantes
 ```r
 popular_routes <- departures %>%
   count(departure_airport_ICAO, destination_airport_ICAO) %>%
   arrange(desc(n))
 ```
 
-#### 3. Plot flight paths
+#### 3. Tracer les trajectoires de vol
 ```r
 library(ggplot2)
 
-# Get state vectors for a specific flight
+# Obtenir les vecteurs d'état pour un vol spécifique
 flight_path <- arrival_positions %>%
   filter(id == "4b43ad_2022-10-20 08:11:39")
 
-# Plot the trajectory
+# Tracer la trajectoire
 ggplot(flight_path, aes(x = longitude, y = latitude)) +
   geom_path() +
   geom_point() +
   theme_minimal() +
-  labs(title = "Flight Path", x = "Longitude", y = "Latitude")
+  labs(title = "Trajectoire de vol", x = "Longitude", y = "Latitude")
 ```
 
-## 🔄 Data Updates
+## 🔄 Mises à jour des données
 
-The data is automatically updated **twice daily** at:
+Les données sont mises à jour automatiquement **deux fois par jour** à :
 - 04:27 UTC
 - 08:27 UTC
 
-via GitHub Actions workflow. The workflow fetches data for the last 30 days and updates missing dates.
+via le workflow GitHub Actions. Le workflow récupère les données des 30 derniers jours et met à jour les dates manquantes.
 
-## 🔐 Running Locally
+## 🔐 Exécution locale
 
-To run the data collection scripts locally:
+Pour exécuter les scripts de collecte de données localement :
 
-1. **Install R dependencies:**
+1. **Installer les dépendances R :**
    ```r
-   # Install renv for package management
+   # Installer renv pour la gestion des paquets
    install.packages("renv")
    renv::restore()
    ```
 
-2. **Set up OpenSky credentials:**
-   Create a `.Renviron` file in the project root:
+2. **Configurer les identifiants OpenSky :**
+   Créez un fichier `.Renviron` à la racine du projet :
    ```bash
-   OPENSKY_USR="your_username"
-   OPENSKY_PWD="your_password"
+   OPENSKY_USR="votre_nom_utilisateur"
+   OPENSKY_PWD="votre_mot_de_passe"
    ```
-   > **Note:** Sign up for a free account at [OpenSky Network](https://opensky-network.org) to access historical data
+   > **Note :** Inscrivez-vous pour un compte gratuit sur [OpenSky Network](https://opensky-network.org) pour accéder aux données historiques
 
-3. **Run the data collection script:**
+3. **Exécuter le script de collecte de données :**
    ```r
    Rscript R/save_historical_osn.R
    ```
 
-> ⚠️ **Warning:** Full data collection with state vectors can take several hours for 30 days of data.
+> ⚠️ **Attention :** La collecte complète des données avec les vecteurs d'état peut prendre plusieurs heures pour 30 jours de données.
 
-## 📖 About LSGL
+## 📖 À propos de LSGL
 
-**Lausanne-Blécherette Airport** (ICAO: LSGL) is a small regional airport in Switzerland primarily used for:
-- General aviation
-- Flight training
-- Private aircraft
-- Occasional small commercial flights
+**L'aéroport de Lausanne-Blécherette** (ICAO : LSGL) est un petit aéroport régional en Suisse principalement utilisé pour :
+- L'aviation générale
+- L'instruction en vol
+- Les aéronefs privés
+- De petits vols commerciaux occasionnels
 
-Given its nature, flight volume is relatively low compared to major airports (typically 5-20 flights per day).
+Compte tenu de sa nature, le volume de vol est relativement faible par rapport aux grands aéroports (typiquement 5 à 20 vols par jour).
 
-## 🔗 Useful Links
+## 🔗 Liens utiles
 
-- [OpenSky Network Airport Profile for LSGL](https://opensky-network.org/airport-profile?icao=LSGL)
-- [OpenSky Network API Documentation](https://openskynetwork.github.io/opensky-api/)
-- [R openSkies Package](https://CRAN.R-project.org/package=openSkies)
+- [Profil de l'aéroport OpenSky Network pour LSGL](https://opensky-network.org/airport-profile?icao=LSGL)
+- [Documentation de l'API OpenSky Network](https://openskynetwork.github.io/opensky-api/)
+- [Paquet R openSkies](https://CRAN.R-project.org/package=openSkies)
 
-## 📝 License
+## 📝 Licence
 
-GPL-3.0 License - See [LICENSE](LICENSE) file for details
+Licence GPL-3.0 - Voir le fichier [LICENSE](LICENSE) pour plus de détails
 
-## 🤝 Contributing
+## 🤝 Contribution
 
-This is primarily a personal data collection project, but issues and suggestions are welcome!
+Il s'agit principalement d'un projet personnel de collecte de données, mais les problèmes (issues) et les suggestions sont les bienvenus !
 
 ---
 
-**Data Source:** [OpenSky Network](https://opensky-network.org) - The OpenSky Network is a non-profit association that provides open air traffic data for research and non-commercial purposes.
+**Source de données :** [OpenSky Network](https://opensky-network.org) - Le réseau OpenSky est une association à but non lucratif qui fournit des données de trafic aérien ouvertes à des fins de recherche et non commerciales.
