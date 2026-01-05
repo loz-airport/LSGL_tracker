@@ -1,0 +1,2 @@
+ICAO24,call_sign,departure_time,departure_date,arrival_time,arrival_date,departure_airport_ICAO,destination_airport_ICAO,id
+46104c,FSF468M,2026-01-04T12:14:26Z,2026-01-04,2026-01-04T13:54:58Z,2026-01-04,EGLF,LSGL,46104c_2026-01-04 13:14:26
