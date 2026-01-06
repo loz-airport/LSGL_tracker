@@ -1,5 +1,6 @@
 ICAO24,call_sign,model,origin_country,photo_url
 39c9ae,NA,NA,France,NA
+3c4dcd,DLH2JF,CRJ 900 LR NG,Germany,https://t.plnspttrs.net/14587/1704668_79fc412b0e_280.jpg
 3cef03,PVD412E,NA,NA,https://t.plnspttrs.net/09962/1813664_4c4f76a174_280.jpg
 3d5453,NA,NA,Germany,https://t.plnspttrs.net/49261/1789861_c1abe676cc_280.jpg
 3d602e,DFIRE,SOCATA TBM 700 B,Germany,https://t.plnspttrs.net/18051/1830338_a39aa96ed6_280.jpg
@@ -8,7 +9,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 44aae2,OOJWB,PC-XII NG 47E,Belgium,https://t.plnspttrs.net/40091/1774786_0564439d42_280.jpg
 44c061,PGC14V,,Belgium,https://t.plnspttrs.net/42000/1415134_13774b353d_280.jpg
 44c062,PGC67F,Pilatus PC-12 NGX,Belgium,https://t.plnspttrs.net/31530/1750470_ee80d53b3e_280.jpg
-460812,FSF413L,,Finland,https://t.plnspttrs.net/10630/1731563_7c6a19a5a0_280.jpg
+460812,NA,NA,Finland,https://t.plnspttrs.net/10630/1731563_7c6a19a5a0_280.jpg
 46097d,OHDPL,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/07040/1539486_1649593583_280.jpg
 460d8a,FSF874N,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/03696/1758948_0ee80847cc_280.jpg
 460f46,NA,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/02928/1800815_8a26fc6073_280.jpg
@@ -75,4 +76,4 @@ ICAO24,call_sign,model,origin_country,photo_url
 4d2016,NA,Pilatus PC-12 NGX,Malta,https://t.plnspttrs.net/25763/1857422_b8b79a6767_280.jpg
 502d3e,BTI3HZ,A220-300,Latvia,https://t.plnspttrs.net/08432/1865852_8b1b9745b5_280.jpg
 a1e6db,N221XX,PC-12/47E,United States,NA
-a34bb1,N311MX,PA-46-600TP,United States,NA
+a34bb1,NA,PA-46-600TP,United States,NA
