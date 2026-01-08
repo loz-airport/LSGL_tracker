@@ -1,0 +1,2 @@
+ICAO24,call_sign,departure_time,departure_date,arrival_time,arrival_date,departure_airport_ICAO,destination_airport_ICAO,id
+4b1a27,EZS78YX,2026-01-06T20:12:13Z,2026-01-06,2026-01-06T21:37:06Z,2026-01-06,EDDB,LSGL,4b1a27_2026-01-06 21:12:13

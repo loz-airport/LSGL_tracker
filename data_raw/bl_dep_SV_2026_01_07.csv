@@ -1,0 +1,4 @@
+ICAO24,longitude,latitude,requested_time,geo_altitude,velocity,special_purpose_indicator,origin_country,id,arrival_date,departure_date
+4b3303,6.6387,46.5247,1767804986,716.28,26.99,FALSE,Switzerland,4b3303_2026-01-07 17:56:26,2026-01-07,2026-01-07
+4b3303,6.6182,46.5472,1767805166,678.18,0,FALSE,Switzerland,4b3303_2026-01-07 17:56:26,2026-01-07,2026-01-07
+4b3303,6.6182,46.5472,1767805346,678.18,0,FALSE,Switzerland,4b3303_2026-01-07 17:56:26,2026-01-07,2026-01-07
