@@ -2,6 +2,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 39c9ae,NA,NA,France,NA
 3c4dcd,DLH2JF,CRJ 900 LR NG,Germany,https://t.plnspttrs.net/14587/1704668_79fc412b0e_280.jpg
 3c6594,DLH1YM,A319 114,Germany,https://t.plnspttrs.net/20806/1811468_20192a9b55_280.jpg
+3cce03,DWW148,Phenom 300,Germany,https://t.plnspttrs.net/29039/1831319_36fd931c4c_280.jpg
 3cef03,PVD412E,NA,NA,https://t.plnspttrs.net/09962/1813664_4c4f76a174_280.jpg
 3d5453,NA,NA,Germany,https://t.plnspttrs.net/49261/1789861_c1abe676cc_280.jpg
 3d602e,DFIRE,SOCATA TBM 700 B,Germany,https://t.plnspttrs.net/18051/1830338_a39aa96ed6_280.jpg
@@ -41,6 +42,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b1617,SWR3ZK,A320-214,Switzerland,https://t.plnspttrs.net/13429/1852844_bf5fcb2f27_280.jpg
 4b169a,SWR3ZK,A321-212,Switzerland,https://t.plnspttrs.net/09735/1849278_d409c3e4eb_280.jpg
 4b17fc,SWR3CX,BD-500-1A11 (CS300),Switzerland,https://t.plnspttrs.net/30400/1720955_94b90e2fae_280.jpg
+4b18e7,HBJLF,BD-700-2A12 Global 7500,Switzerland,https://t.plnspttrs.net/28124/1497955_36fa9a5d15_280.jpg
 4b1a27,EZS78YX,A320-214,Switzerland,https://t.plnspttrs.net/17449/1831182_d1b2515100_280.jpg
 4b1af2,HBKFI,ROBIN DR 400/140 B,Switzerland,https://t.plnspttrs.net/33499/1605005_231c3e9d18_280.jpg
 4b1bdd,HBKOJ,DR-400/140B Major,Switzerland,https://t.plnspttrs.net/33048/1661727_a208319904_280.jpg
@@ -53,7 +55,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b2841,NA,Piper PA-28-236,Switzerland,https://t.plnspttrs.net/26214/1830026_6e0997a86a_280.jpg
 4b28b1,HBPKR,PA-28-181,Switzerland,NA
 4b2919,HBPOR,PA-28-236,Switzerland,NA
-4b2964,HBPRO,,Switzerland,NA
+4b2964,HBPRO,,Switzerland,https://t.plnspttrs.net/07897/1460887_8f780557fd_280.jpg
 4b2f91,HBSAJ,BRM Aero Bristell B23,Switzerland,NA
 4b32fd,RGA03,Airbus Helicopters H145,Switzerland,NA
 4b32fe,RGA15,Airbus Helicopters H145,Switzerland,NA
@@ -68,14 +70,15 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b3d0a,HBXDA,Bell 429 GlobalRanger,Switzerland,https://t.plnspttrs.net/36981/1862508_029b64d190_280.jpg
 4b3e2c,AGV06,Airbus Helicopters H135,Switzerland,NA
 4b3e2d,AGV01,Airbus Helicopter H135,Switzerland,https://t.plnspttrs.net/14636/1665034_ea33e13b4b_280.jpg
-4b3e3f,KHS31,Leonardo AW139,Switzerland,https://t.plnspttrs.net/37224/1784323_3ac494aa92_280.jpg
+4b3e3f,NA,Leonardo AW139,Switzerland,https://t.plnspttrs.net/37224/1784323_3ac494aa92_280.jpg
 4b3e95,HBXSF,,Liechtenstein,NA
 4b4381,HBZOR,NA,NA,NA
-4b4471,HBZXX,Airbus Helicopters H125,Switzerland,NA
+4b4471,NA,Airbus Helicopters H125,Switzerland,NA
 4b447c,NA,NA,Switzerland,https://t.plnspttrs.net/49395/1777577_c383528177_280.jpg
 4b44a3,HBZZV,Bell 407GXP,Switzerland,NA
 4b44a5,HBZZX,,Switzerland,NA
 4b7f6c,NA,PC-6 B2-H2M-1,Switzerland,NA
+4cad93,SAS93E,Airbus A320-251N,Ireland,https://t.plnspttrs.net/49139/1869808_400662235c_280.jpg
 4d02ad,JFA76H,PC-XII 47E,Luxembourg,NA
 4d02bc,JFA30E,,Luxembourg,NA
 4d02bd,JFA00B,,Luxembourg,https://t.plnspttrs.net/25336/1812280_fed442fa97_280.jpg
