@@ -10,7 +10,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 3c6758,DLH3EE,Airbus A320 214SL,Germany,https://t.plnspttrs.net/13400/1848254_a0d3b72588_280.jpg
 3c7b01,VJH772,EMB-135BJ Legacy 650,Germany,https://t.plnspttrs.net/04218/1806464_efc0cbf31c_280.jpg
 3cce03,DWW148,Phenom 300,Germany,https://t.plnspttrs.net/29039/1831319_36fd931c4c_280.jpg
-3cef03,PVD412E,NA,NA,https://t.plnspttrs.net/09962/1813664_4c4f76a174_280.jpg
+3cef03,NA,NA,NA,https://t.plnspttrs.net/09962/1813664_4c4f76a174_280.jpg
 3d5453,NA,NA,Germany,https://t.plnspttrs.net/49261/1789861_c1abe676cc_280.jpg
 3d602e,NA,SOCATA TBM 700 B,Germany,https://t.plnspttrs.net/18051/1830338_a39aa96ed6_280.jpg
 406540,EZY78KJ,,United Kingdom,https://t.plnspttrs.net/46068/1840313_781c9ee546_280.jpg
@@ -41,7 +41,8 @@ ICAO24,call_sign,model,origin_country,photo_url
 485a35,KLM89Y,737-8K2,Kingdom of the Netherlands,https://t.plnspttrs.net/49845/1796720_53ed523884_280.jpg
 494144,NJE996B,Embraer Phenom 300E,Portugal,NA
 49d590,AAO57,Pilatus PC-12 NGX,Czechia,https://t.plnspttrs.net/48039/1860915_1fc20030ef_280.jpg
-49d5e2,OKOUT,Pilatus PC-12 NGX,Czechia,NA
+49d5e2,NA,Pilatus PC-12 NGX,Czechia,NA
+49d628,OKUTC,,Czechia,NA
 4aaa0b,SEJPK,,Sweden,NA
 4aca73,SAS34B,Embraer E195LR,Sweden,https://t.plnspttrs.net/00479/1843022_a7f5013659_280.jpg
 4b0544,HBBZW,NA,NA,NA
@@ -125,7 +126,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4d02dd,NA,NA,NA,https://t.plnspttrs.net/36937/1756792_a483ddd1ef_280.jpg
 4d02de,JFA16S,,Luxembourg,https://t.plnspttrs.net/38685/810293_efe63e446b_280.jpg
 4d2016,NA,Pilatus PC-12 NGX,Malta,https://t.plnspttrs.net/25763/1857422_b8b79a6767_280.jpg
-4d217d,9HVIP,,Malta,https://t.plnspttrs.net/33960/964648_9498cf2c53_280.jpg
+4d217d,9HVIP,,Malta,NA
 502d3e,BTI3HZ,A220-300,Latvia,https://t.plnspttrs.net/08432/1865852_8b1b9745b5_280.jpg
 a03164,N111RC,PA46-500TP,United States,NA
 a1e6db,NA,PC-12/47E,United States,NA
