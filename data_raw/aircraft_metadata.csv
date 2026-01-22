@@ -33,7 +33,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 461fbd,OHMAN,,Finland,https://t.plnspttrs.net/22892/1800304_b3d3916b0c_280.jpg
 4627c1,OHPBL,,Finland,https://t.plnspttrs.net/33448/1800438_4884e9b7a6_280.jpg
 462d44,NA,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/13970/1525640_e7d2a4d825_280.jpg
-462dd1,NA,NA,Finland,https://t.plnspttrs.net/45644/1822419_ae20eb8344_280.jpg
+462dd1,FSF702A,,Finland,https://t.plnspttrs.net/45644/1822419_ae20eb8344_280.jpg
 46316e,FSF374H,PC-12/47E NG,Finland,https://t.plnspttrs.net/34201/1864542_4f8758dc66_280.jpg
 463434,FSF506L,Pilatus PC-12/47E,Finland,https://t.plnspttrs.net/29993/1482115_d95f334040_280.jpg
 463fc8,FSF205A,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/04396/1779975_64f09f738b_280.jpg
@@ -101,6 +101,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b3e2d,AGV01,Airbus Helicopter H135,Switzerland,https://t.plnspttrs.net/14636/1665034_ea33e13b4b_280.jpg
 4b3e3f,NA,Leonardo AW139,Switzerland,https://t.plnspttrs.net/37224/1784323_3ac494aa92_280.jpg
 4b3e95,NA,NA,Liechtenstein,NA
+4b3ee3,AHE921,Bell 429 GlobalRanger,Switzerland,NA
 4b4089,HBYLL,RV-6,Switzerland,https://t.plnspttrs.net/39772/1219654_ce00c8421c_280.jpg
 4b40a1,HBYMJ,,Switzerland,https://t.plnspttrs.net/27581/1366340_3a4ae33724_280.jpg
 4b40c8,HBYNW,RV-7A,Switzerland,NA
@@ -109,13 +110,14 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b4471,HBZXX,Airbus Helicopters H125,Switzerland,NA
 4b447c,NA,NA,Switzerland,https://t.plnspttrs.net/49395/1777577_c383528177_280.jpg
 4b4488,HBZYU,Guimbal Cabri G2,Switzerland,https://t.plnspttrs.net/13376/1725780_596a589053_280.jpg
+4b449c,HBZZO,Airbus Helicopters H125,Switzerland,NA
 4b44a3,NA,Bell 407GXP,Switzerland,NA
 4b44a5,NA,NA,Switzerland,NA
 4b7f6c,NA,PC-6 B2-H2M-1,Switzerland,NA
 4ba8da,TKJ6CM,737NG 8F2/W,Turkey,https://t.plnspttrs.net/05674/1824206_b6875d39a3_280.jpg
 4bb26f,THY3XJ,Airbus 321-271NX,Turkey,https://t.plnspttrs.net/38683/1764104_24cb0a9432_280.jpg
 4bb279,THY5UE,A321-271NX,Turkey,https://t.plnspttrs.net/44240/1861045_fbdb574e81_280.jpg
-4bb285,THY5UE,,Turkey,https://t.plnspttrs.net/45707/1833060_58c1bb89cc_280.jpg
+4bb285,THY5UE,,Turkey,https://t.plnspttrs.net/18414/1879501_d9ba4aa59c_280.jpg
 4bc8c6,PGT486N,Airbus A321-251NX,Turkey,https://t.plnspttrs.net/29388/1857249_f451fa548d_280.jpg
 4cad93,SAS93E,Airbus A320-251N,Ireland,https://t.plnspttrs.net/49139/1869808_400662235c_280.jpg
 4d02a5,JFA94V,,Luxembourg,https://t.plnspttrs.net/22364/1343577_41833d096d_280.jpg
