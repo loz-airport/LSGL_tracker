@@ -1,0 +1,2 @@
+ICAO24,call_sign,departure_time,departure_date,arrival_time,arrival_date,departure_airport_ICAO,destination_airport_ICAO,id
+4b28b1,HBPKR,2026-01-22T13:09:58Z,2026-01-22,2026-01-22T13:59:29Z,2026-01-22,LSGL,LSZB,4b28b1_2026-01-22 14:09:58
