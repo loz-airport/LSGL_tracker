@@ -52,8 +52,8 @@ ICAO24,call_sign,model,origin_country,photo_url
 4aca73,SAS34B,Embraer E195LR,Sweden,https://t.plnspttrs.net/00479/1843022_a7f5013659_280.jpg
 4b0544,HBBZW,NA,NA,NA
 4b059a,NA,F177RG,Switzerland,https://t.plnspttrs.net/32383/1205300_43c0f084e7_280.jpg
-4b0618,HBCIA,F172P,Switzerland,NA
-4b08c3,HBDIH,M20J,Switzerland,https://t.plnspttrs.net/44915/1256337_eb14628389_280.jpg
+4b0618,NA,F172P,Switzerland,NA
+4b08c3,NA,M20J,Switzerland,https://t.plnspttrs.net/44915/1256337_eb14628389_280.jpg
 4b0b24,HBEFS,CEA DR 220,Switzerland,NA
 4b0c39,NA,NA,Switzerland,NA
 4b0e27,NA,Pilatus PC-12 NGX,Switzerland,https://t.plnspttrs.net/07832/1808083_662320d15d_280.jpg
@@ -83,7 +83,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b1bdf,HBKOL,TBM700 B,Switzerland,https://t.plnspttrs.net/47840/361507_6ed80536c8_280.jpg
 4b1bfd,HBKPP,,Switzerland,https://t.plnspttrs.net/32266/1464357_666bef3203_280.jpg
 4b1c5c,HBKTG,F.260D,Switzerland,https://t.plnspttrs.net/16602/686899_f53c620025_280.jpg
-4b1c63,HBKTN,BRM Aero Bristell B23,Switzerland,NA
+4b1c63,NA,BRM Aero Bristell B23,Switzerland,NA
 4b25ea,HBOJI,Piper PA-28-161,Switzerland,NA
 4b27bf,HBPBJ,Piper PA-28-236,Switzerland,NA
 4b27c0,HBPBK,PA-32R-300,Switzerland,https://t.plnspttrs.net/01024/1728310_83637bfd48_280.jpg
@@ -92,7 +92,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b28b1,HBPKR,PA-28-181,Switzerland,NA
 4b2919,HBPOR,PA-28-236,Switzerland,NA
 4b2964,HBPRO,,Switzerland,https://t.plnspttrs.net/07897/1460887_8f780557fd_280.jpg
-4b2f91,HBSAJ,BRM Aero Bristell B23,Switzerland,NA
+4b2f91,NA,BRM Aero Bristell B23,Switzerland,NA
 4b32fd,RGA03,Airbus Helicopters H145,Switzerland,NA
 4b32fe,RGA04,Airbus Helicopters H145,Switzerland,NA
 4b3301,NA,Airbus Helicopters H145,Switzerland,NA
@@ -145,4 +145,4 @@ ICAO24,call_sign,model,origin_country,photo_url
 502d3e,BTI3HZ,A220-300,Latvia,https://t.plnspttrs.net/08432/1865852_8b1b9745b5_280.jpg
 a03164,N111RC,PA46-500TP,United States,NA
 a1e6db,NA,PC-12/47E,United States,NA
-a34bb1,NA,PA-46-600TP,United States,NA
+a34bb1,N311MX,PA-46-600TP,United States,NA
