@@ -50,7 +50,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 49d628,OKUTC,,Czechia,NA
 4aaa0b,NA,NA,Sweden,NA
 4aca73,SAS34B,Embraer E195LR,Sweden,https://t.plnspttrs.net/00479/1843022_a7f5013659_280.jpg
-4b0544,HBBZW,NA,NA,NA
+4b0544,NA,NA,NA,NA
 4b059a,NA,F177RG,Switzerland,https://t.plnspttrs.net/32383/1205300_43c0f084e7_280.jpg
 4b0618,NA,F172P,Switzerland,NA
 4b08c3,NA,M20J,Switzerland,https://t.plnspttrs.net/44915/1256337_eb14628389_280.jpg
@@ -79,6 +79,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b1a5f,EZS63ZX,A320 214,Switzerland,https://t.plnspttrs.net/29642/1785677_8dfae7a39c_280.jpg
 4b1af2,HBKFI,ROBIN DR 400/140 B,Switzerland,https://t.plnspttrs.net/33499/1605005_231c3e9d18_280.jpg
 4b1b9d,HBKLX,Robin DR-400/140B,Switzerland,https://t.plnspttrs.net/26556/1761440_0ec2901d8d_280.jpg
+4b1bc8,HBKNO,Tecnam P2008JC MkII,Switzerland,NA
 4b1bdd,HBKOJ,DR-400/140B Major,Switzerland,https://t.plnspttrs.net/33048/1661727_a208319904_280.jpg
 4b1bdf,HBKOL,TBM700 B,Switzerland,https://t.plnspttrs.net/47840/361507_6ed80536c8_280.jpg
 4b1bfd,HBKPP,,Switzerland,https://t.plnspttrs.net/32266/1464357_666bef3203_280.jpg
@@ -95,6 +96,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b2f91,NA,BRM Aero Bristell B23,Switzerland,NA
 4b32fd,RGA03,Airbus Helicopters H145,Switzerland,NA
 4b32fe,RGA04,Airbus Helicopters H145,Switzerland,NA
+4b3300,RGA16,Airbus Helicopters H145,Switzerland,NA
 4b3301,NA,Airbus Helicopters H145,Switzerland,NA
 4b3302,RGA15,Airbus Helicopters H145,Switzerland,NA
 4b3303,RGA04,Airbus Helicopters H145,Switzerland,NA
@@ -131,7 +133,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4bb285,THY5UE,,Turkey,https://t.plnspttrs.net/18414/1879501_d9ba4aa59c_280.jpg
 4bc8c6,PGT486N,Airbus A321-251NX,Turkey,https://t.plnspttrs.net/29388/1857249_f451fa548d_280.jpg
 4cad93,SAS93E,Airbus A320-251N,Ireland,https://t.plnspttrs.net/49139/1869808_400662235c_280.jpg
-4d02a5,JFA94V,,Luxembourg,NA
+4d02a5,JFA94V,,Luxembourg,https://t.plnspttrs.net/22364/1343577_41833d096d_280.jpg
 4d02ad,NA,PC-XII 47E,Luxembourg,NA
 4d02b7,JFA95V,,Luxembourg,https://t.plnspttrs.net/21895/1754911_0714c18710_280.jpg
 4d02bc,NA,NA,Luxembourg,https://t.plnspttrs.net/31567/1796867_2a1adf9a05_280.jpg
