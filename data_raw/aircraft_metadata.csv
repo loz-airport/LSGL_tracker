@@ -96,7 +96,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b2f91,NA,BRM Aero Bristell B23,Switzerland,NA
 4b32fd,RGA03,Airbus Helicopters H145,Switzerland,NA
 4b32fe,RGA04,Airbus Helicopters H145,Switzerland,NA
-4b3300,RGA16,Airbus Helicopters H145,Switzerland,NA
+4b3300,RGA04,Airbus Helicopters H145,Switzerland,NA
 4b3301,NA,Airbus Helicopters H145,Switzerland,NA
 4b3302,RGA15,Airbus Helicopters H145,Switzerland,NA
 4b3303,RGA04,Airbus Helicopters H145,Switzerland,NA
@@ -123,6 +123,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b4471,HBZXX,Airbus Helicopters H125,Switzerland,NA
 4b447c,NA,NA,Switzerland,https://t.plnspttrs.net/49395/1777577_c383528177_280.jpg
 4b4488,HBZYU,Guimbal Cabri G2,Switzerland,https://t.plnspttrs.net/13376/1725780_596a589053_280.jpg
+4b4492,HBZZE,NA,NA,NA
 4b449c,HBZZO,Airbus Helicopters H125,Switzerland,NA
 4b44a3,NA,Bell 407GXP,Switzerland,NA
 4b44a5,NA,NA,Switzerland,NA
