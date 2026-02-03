@@ -28,6 +28,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 44c061,NA,NA,Belgium,https://t.plnspttrs.net/42000/1415134_13774b353d_280.jpg
 44c062,NA,Pilatus PC-12 NGX,Belgium,https://t.plnspttrs.net/31530/1750470_ee80d53b3e_280.jpg
 460812,NA,NA,Finland,https://t.plnspttrs.net/10630/1731563_7c6a19a5a0_280.jpg
+460844,OHDDK,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/39836/1875193_ecb1915b22_280.jpg
 46097d,FSF110A,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/07040/1539486_1649593583_280.jpg
 460d8a,FSF121A,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/03696/1758948_0ee80847cc_280.jpg
 460f46,FSF404A,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/02928/1800815_8a26fc6073_280.jpg
@@ -79,6 +80,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b1a5f,EZS63ZX,A320 214,Switzerland,https://t.plnspttrs.net/29642/1785677_8dfae7a39c_280.jpg
 4b1af2,HBKFI,ROBIN DR 400/140 B,Switzerland,https://t.plnspttrs.net/33499/1605005_231c3e9d18_280.jpg
 4b1b9d,HBKLX,Robin DR-400/140B,Switzerland,https://t.plnspttrs.net/26556/1761440_0ec2901d8d_280.jpg
+4b1bae,HBKMO,SR22,Switzerland,https://t.plnspttrs.net/48956/1298198_552377a643_280.jpg
 4b1bc8,HBKNO,Tecnam P2008JC MkII,Switzerland,NA
 4b1bdd,HBKOJ,DR-400/140B Major,Switzerland,https://t.plnspttrs.net/33048/1661727_a208319904_280.jpg
 4b1bdf,HBKOL,TBM700 B,Switzerland,https://t.plnspttrs.net/47840/361507_6ed80536c8_280.jpg
@@ -145,7 +147,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4d2016,NA,Pilatus PC-12 NGX,Malta,https://t.plnspttrs.net/25763/1857422_b8b79a6767_280.jpg
 4d217d,9HVIP,,Malta,https://t.plnspttrs.net/33960/964648_9498cf2c53_280.jpg
 502d29,BTI69W,A220-300,Latvia,https://t.plnspttrs.net/05671/1859287_6eb33cfb76_280.jpg
-502d3e,BTI3HZ,A220-300,Latvia,https://t.plnspttrs.net/08432/1865852_8b1b9745b5_280.jpg
+502d3e,NA,A220-300,Latvia,https://t.plnspttrs.net/08432/1865852_8b1b9745b5_280.jpg
 a03164,N111RC,PA46-500TP,United States,NA
 a1e6db,NA,PC-12/47E,United States,NA
 a34bb1,N311MX,PA-46-600TP,United States,NA
