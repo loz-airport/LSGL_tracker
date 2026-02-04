@@ -3,7 +3,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 300781,DLA3PW,E195LR,Italy,https://t.plnspttrs.net/23274/1832477_84910444f6_280.jpg
 346303,IBE06HH,,Spain,https://t.plnspttrs.net/01131/1872166_59e8b58496_280.jpg
 398800,FHCAA,DR.400 180 Regent,France,NA
-39bc27,FHPBH,429 Global Ranger,France,https://t.plnspttrs.net/46287/1852514_5a97922d57_280.jpg
+39bc27,NA,429 Global Ranger,France,https://t.plnspttrs.net/46287/1852514_5a97922d57_280.jpg
 39c9ae,NA,NA,France,NA
 39d565,FHVLF,Cirrus SR22,France,https://t.plnspttrs.net/14529/1543055_b6ca406e88_280.jpg
 3c4dcd,NA,CRJ 900 LR NG,Germany,https://t.plnspttrs.net/14587/1704668_79fc412b0e_280.jpg
@@ -30,7 +30,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 460812,NA,NA,Finland,https://t.plnspttrs.net/10630/1731563_7c6a19a5a0_280.jpg
 460844,OHDDK,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/39836/1875193_ecb1915b22_280.jpg
 46097d,FSF110A,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/07040/1539486_1649593583_280.jpg
-460d8a,FSF121A,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/03696/1758948_0ee80847cc_280.jpg
+460d8a,NA,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/03696/1758948_0ee80847cc_280.jpg
 460f46,FSF404A,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/02928/1800815_8a26fc6073_280.jpg
 46104c,NA,NA,NA,NA
 461553,NA,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/49412/1776832_0fb8eb6023_280.jpg
@@ -41,12 +41,12 @@ ICAO24,call_sign,model,origin_country,photo_url
 462d44,FSF207A,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/13970/1525640_e7d2a4d825_280.jpg
 462dd1,FSF702A,,Finland,https://t.plnspttrs.net/45644/1822419_ae20eb8344_280.jpg
 46316e,FSF374H,PC-12/47E NG,Finland,https://t.plnspttrs.net/34201/1864542_4f8758dc66_280.jpg
-463434,FSF506L,Pilatus PC-12/47E,Finland,https://t.plnspttrs.net/29993/1482115_d95f334040_280.jpg
+463434,NA,Pilatus PC-12/47E,Finland,https://t.plnspttrs.net/29993/1482115_d95f334040_280.jpg
 463fc8,FSF205A,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/04396/1779975_64f09f738b_280.jpg
 4856ed,PHBRA,,Kingdom of the Netherlands,https://t.plnspttrs.net/43364/1874960_67aa26a86f_280.jpg
 485a35,KLM89Y,737-8K2,Kingdom of the Netherlands,https://t.plnspttrs.net/49845/1796720_53ed523884_280.jpg
 494144,NJE996B,Embraer Phenom 300E,Portugal,NA
-49d590,AAO57,Pilatus PC-12 NGX,Czechia,https://t.plnspttrs.net/48039/1860915_1fc20030ef_280.jpg
+49d590,NA,Pilatus PC-12 NGX,Czechia,https://t.plnspttrs.net/48039/1860915_1fc20030ef_280.jpg
 49d5e2,NA,Pilatus PC-12 NGX,Czechia,NA
 49d628,OKUTC,,Czechia,NA
 4aaa0b,NA,NA,Sweden,NA
@@ -115,7 +115,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b3e95,NA,NA,Liechtenstein,NA
 4b3ee3,AHE921,Bell 429 GlobalRanger,Switzerland,NA
 4b4089,HBYLL,RV-6,Switzerland,https://t.plnspttrs.net/39772/1219654_ce00c8421c_280.jpg
-4b40a1,HBYMJ,,Switzerland,https://t.plnspttrs.net/27668/1883734_f9280611e3_280.jpg
+4b40a1,NA,NA,Switzerland,https://t.plnspttrs.net/27668/1883734_f9280611e3_280.jpg
 4b40c8,HBYNW,RV-7A,Switzerland,NA
 4b413c,HBYSI,,Switzerland,https://t.plnspttrs.net/04884/1526113_663d1a4c9b_280.jpg
 4b413f,HBYSL,Vans RV-7,Switzerland,NA
