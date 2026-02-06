@@ -13,6 +13,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 3c7b01,VJH772,EMB-135BJ Legacy 650,Germany,https://t.plnspttrs.net/04218/1806464_efc0cbf31c_280.jpg
 3cce03,DWW148,Phenom 300,Germany,https://t.plnspttrs.net/29039/1831319_36fd931c4c_280.jpg
 3cef03,NA,NA,NA,https://t.plnspttrs.net/09962/1813664_4c4f76a174_280.jpg
+3d4973,DFABJ,Pilatus PC-12 NGX,Germany,https://t.plnspttrs.net/08281/1880324_c9bd3cf315_280.jpg
 3d5453,NA,NA,Germany,https://t.plnspttrs.net/49261/1789861_c1abe676cc_280.jpg
 3d602e,NA,SOCATA TBM 700 B,Germany,https://t.plnspttrs.net/18051/1830338_a39aa96ed6_280.jpg
 3e1f3b,DIDAH,B200GT,Germany,https://t.plnspttrs.net/32322/1799559_52bd2a3eae_280.jpg
@@ -58,7 +59,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b0b24,HBEFS,CEA DR 220,Switzerland,NA
 4b0c39,NA,NA,Switzerland,NA
 4b0e27,NA,Pilatus PC-12 NGX,Switzerland,https://t.plnspttrs.net/07832/1808083_662320d15d_280.jpg
-4b0e59,NA,PC-6/B2-H4,Switzerland,https://t.plnspttrs.net/30951/1851802_1be1d0aa85_280.jpg
+4b0e59,HBFLH,PC-6/B2-H4,Switzerland,https://t.plnspttrs.net/30951/1851802_1be1d0aa85_280.jpg
 4b0f50,NA,NA,Switzerland,https://t.plnspttrs.net/46667/1561740_ae8b8dbd0d_280.jpg
 4b0f70,HBFWA,PC-12/47E,Switzerland,https://t.plnspttrs.net/39734/1788015_a75483d188_280.jpg
 4b0f7e,HBFWO,,Switzerland,https://t.plnspttrs.net/20687/1528068_5b4dfdb9fb_280.jpg
@@ -102,7 +103,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b3300,RGA04,Airbus Helicopters H145,Switzerland,NA
 4b3301,NA,Airbus Helicopters H145,Switzerland,NA
 4b3302,RGA15,Airbus Helicopters H145,Switzerland,NA
-4b3303,RGAIH,Airbus Helicopters H145,Switzerland,NA
+4b3303,RGA04,Airbus Helicopters H145,Switzerland,NA
 4b3305,RGA18,NA,NA,NA
 4b3306,RGA01,NA,NA,NA
 4b34c2,NA,Cessna Turbo Skylane TC,Switzerland,NA
@@ -111,7 +112,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b39f0,HBVYM,EMB-505,Switzerland,https://t.plnspttrs.net/34761/1554198_313deff642_280.jpg
 4b3d0a,HBXDA,Bell 429 GlobalRanger,Switzerland,https://t.plnspttrs.net/36981/1862508_029b64d190_280.jpg
 4b3e2c,AGV02,Airbus Helicopters H135,Switzerland,NA
-4b3e2d,AGV01,Airbus Helicopter H135,Switzerland,https://t.plnspttrs.net/14636/1665034_ea33e13b4b_280.jpg
+4b3e2d,NA,Airbus Helicopter H135,Switzerland,https://t.plnspttrs.net/14636/1665034_ea33e13b4b_280.jpg
 4b3e3f,NA,Leonardo AW139,Switzerland,https://t.plnspttrs.net/37224/1784323_3ac494aa92_280.jpg
 4b3e95,NA,NA,Liechtenstein,NA
 4b3ee3,AHE921,Bell 429 GlobalRanger,Switzerland,NA
@@ -120,6 +121,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b40c8,HBYNW,RV-7A,Switzerland,NA
 4b413c,HBYSI,,Switzerland,https://t.plnspttrs.net/04884/1526113_663d1a4c9b_280.jpg
 4b413f,NA,Vans RV-7,Switzerland,NA
+4b4271,AGV01,EC135 T3 (CPDS),Switzerland,https://t.plnspttrs.net/29227/1303269_398ce69216_280.jpg
 4b4381,NA,NA,NA,NA
 4b442a,HBZVE,,Switzerland,https://t.plnspttrs.net/01625/1864216_d8fce811d4_280.jpg
 4b443c,HBZVW,,Switzerland,NA
@@ -134,7 +136,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4ba8da,TKJ6CM,737NG 8F2/W,Turkey,https://t.plnspttrs.net/05674/1824206_b6875d39a3_280.jpg
 4bb26f,THY3XJ,Airbus 321-271NX,Turkey,https://t.plnspttrs.net/38683/1764104_24cb0a9432_280.jpg
 4bb279,THY5UE,A321-271NX,Turkey,https://t.plnspttrs.net/44240/1861045_fbdb574e81_280.jpg
-4bb285,THY5UE,,Turkey,https://t.plnspttrs.net/18414/1879501_d9ba4aa59c_280.jpg
+4bb285,THY5UE,,Turkey,NA
 4bc8c6,PGT486N,Airbus A321-251NX,Turkey,https://t.plnspttrs.net/29388/1857249_f451fa548d_280.jpg
 4cad93,SAS93E,Airbus A320-251N,Ireland,https://t.plnspttrs.net/49139/1869808_400662235c_280.jpg
 4d02a5,JFA94V,,Luxembourg,https://t.plnspttrs.net/22364/1343577_41833d096d_280.jpg
@@ -146,7 +148,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4d02dd,NA,NA,NA,https://t.plnspttrs.net/36937/1756792_a483ddd1ef_280.jpg
 4d02de,JFA16S,,Luxembourg,https://t.plnspttrs.net/38685/810293_efe63e446b_280.jpg
 4d2016,NA,Pilatus PC-12 NGX,Malta,https://t.plnspttrs.net/25763/1857422_b8b79a6767_280.jpg
-4d217d,9HVIP,,Malta,https://t.plnspttrs.net/33960/964648_9498cf2c53_280.jpg
+4d217d,NA,NA,Malta,https://t.plnspttrs.net/33960/964648_9498cf2c53_280.jpg
 502d29,BTI69W,A220-300,Latvia,https://t.plnspttrs.net/05671/1859287_6eb33cfb76_280.jpg
 502d3e,NA,A220-300,Latvia,https://t.plnspttrs.net/08432/1865852_8b1b9745b5_280.jpg
 a03164,N111RC,PA46-500TP,United States,NA
