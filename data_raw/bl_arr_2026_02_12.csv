@@ -1,0 +1,2 @@
+ICAO24,call_sign,departure_time,departure_date,arrival_time,arrival_date,departure_airport_ICAO,destination_airport_ICAO,id
+44082b,AUA153D,2026-02-12T14:33:02Z,2026-02-12,2026-02-12T16:08:05Z,2026-02-12,LOWW,LSGL,44082b_2026-02-12 15:33:02
