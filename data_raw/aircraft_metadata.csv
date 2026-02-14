@@ -24,7 +24,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 440080,NA,NA,Austria,https://t.plnspttrs.net/20901/1839577_741e294c9a_280.jpg
 440141,NA,NA,Austria,https://t.plnspttrs.net/48874/1871742_3a327d6643_280.jpg
 44081f,NA,EMB-195 LR,Austria,https://t.plnspttrs.net/07379/1804235_9a9540fec6_280.jpg
-44082b,AUA153D,EMB-195 LR,Austria,https://t.plnspttrs.net/38291/1885499_fd36c880fc_280.jpg
+44082b,NA,EMB-195 LR,Austria,https://t.plnspttrs.net/38291/1885499_fd36c880fc_280.jpg
 4408c9,NA,NA,Austria,https://t.plnspttrs.net/45317/1870432_7aba7e69cf_280.jpg
 440daa,NA,Pilatus PC-12 NG,Austria,https://t.plnspttrs.net/44649/1671257_9bb999dfc0_280.jpg
 44aae2,NA,PC-XII NG 47E,Belgium,https://t.plnspttrs.net/40091/1774786_0564439d42_280.jpg
@@ -32,6 +32,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 44c062,NA,Pilatus PC-12 NGX,Belgium,https://t.plnspttrs.net/31530/1750470_ee80d53b3e_280.jpg
 460812,NA,NA,Finland,https://t.plnspttrs.net/10630/1731563_7c6a19a5a0_280.jpg
 460844,OHDDK,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/39836/1875193_ecb1915b22_280.jpg
+460861,JFA00D,Pilatus PC-XII NG 47E,Finland,https://t.plnspttrs.net/00490/1609296_6cdb66e86a_280.jpg
 46097d,FSF110A,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/07040/1539486_1649593583_280.jpg
 460d8a,NA,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/03696/1758948_0ee80847cc_280.jpg
 460f46,FSF404A,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/02928/1800815_8a26fc6073_280.jpg
@@ -99,7 +100,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b2837,NA,PA-28-236,Switzerland,NA
 4b2841,NA,Piper PA-28-236,Switzerland,https://t.plnspttrs.net/26214/1830026_6e0997a86a_280.jpg
 4b28b1,HBPKR,PA-28-181,Switzerland,NA
-4b2919,HBPOR,PA-28-236,Switzerland,NA
+4b2919,NA,PA-28-236,Switzerland,NA
 4b2964,HBPRO,,Switzerland,https://t.plnspttrs.net/07897/1460887_8f780557fd_280.jpg
 4b2f91,NA,BRM Aero Bristell B23,Switzerland,NA
 4b303f,HBSHB,,Switzerland,NA
@@ -150,7 +151,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4d02a4,JFA08L,PC-XII 47E,Luxembourg,NA
 4d02a5,JFA94V,,Luxembourg,https://t.plnspttrs.net/22364/1343577_41833d096d_280.jpg
 4d02ad,NA,PC-XII 47E,Luxembourg,NA
-4d02b7,JFA95V,,Luxembourg,https://t.plnspttrs.net/21895/1754911_0714c18710_280.jpg
+4d02b7,NA,NA,Luxembourg,https://t.plnspttrs.net/21895/1754911_0714c18710_280.jpg
 4d02bc,NA,NA,Luxembourg,https://t.plnspttrs.net/31567/1796867_2a1adf9a05_280.jpg
 4d02bd,JFA30K,,Luxembourg,https://t.plnspttrs.net/25336/1812280_fed442fa97_280.jpg
 4d02dc,JFA59Q,PC-12/47E NGX,Luxembourg,https://t.plnspttrs.net/10169/1843727_bcc55a7a5a_280.jpg
