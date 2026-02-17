@@ -47,7 +47,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 46316e,FSF603A,PC-12/47E NG,Finland,https://t.plnspttrs.net/34201/1864542_4f8758dc66_280.jpg
 463434,NA,Pilatus PC-12/47E,Finland,https://t.plnspttrs.net/29993/1482115_d95f334040_280.jpg
 463fc8,NA,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/04396/1779975_64f09f738b_280.jpg
-4856ed,PHBRA,,Kingdom of the Netherlands,https://t.plnspttrs.net/43364/1874960_67aa26a86f_280.jpg
+4856ed,NA,NA,Kingdom of the Netherlands,https://t.plnspttrs.net/43364/1874960_67aa26a86f_280.jpg
 485a35,NA,737-8K2,Kingdom of the Netherlands,https://t.plnspttrs.net/49845/1796720_53ed523884_280.jpg
 494144,NA,Embraer Phenom 300E,Portugal,NA
 49d590,NA,Pilatus PC-12 NGX,Czechia,https://t.plnspttrs.net/48039/1860915_1fc20030ef_280.jpg
@@ -126,7 +126,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b3ee3,AHE921,Bell 429 GlobalRanger,Switzerland,NA
 4b4089,HBYLL,RV-6,Switzerland,https://t.plnspttrs.net/39772/1219654_ce00c8421c_280.jpg
 4b40a1,NA,NA,Switzerland,https://t.plnspttrs.net/27668/1883734_f9280611e3_280.jpg
-4b40c8,HBYNW,RV-7A,Switzerland,NA
+4b40c8,NA,RV-7A,Switzerland,NA
 4b413c,HBYSI,,Switzerland,https://t.plnspttrs.net/04884/1526113_663d1a4c9b_280.jpg
 4b413f,NA,Vans RV-7,Switzerland,NA
 4b4271,AGV01,EC135 T3 (CPDS),Switzerland,https://t.plnspttrs.net/29227/1303269_398ce69216_280.jpg
@@ -157,7 +157,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4d02bd,JFA30K,,Luxembourg,https://t.plnspttrs.net/25336/1812280_fed442fa97_280.jpg
 4d02dc,JFA59Q,PC-12/47E NGX,Luxembourg,https://t.plnspttrs.net/10169/1843727_bcc55a7a5a_280.jpg
 4d02dd,NA,NA,NA,https://t.plnspttrs.net/36937/1756792_a483ddd1ef_280.jpg
-4d02de,JFA16S,,Luxembourg,https://t.plnspttrs.net/38685/810293_efe63e446b_280.jpg
+4d02de,JFA21W,,Luxembourg,https://t.plnspttrs.net/38685/810293_efe63e446b_280.jpg
 4d2016,NA,Pilatus PC-12 NGX,Malta,https://t.plnspttrs.net/25763/1857422_b8b79a6767_280.jpg
 4d217d,NA,NA,Malta,https://t.plnspttrs.net/33960/964648_9498cf2c53_280.jpg
 502d29,BTI69W,A220-300,Latvia,https://t.plnspttrs.net/05671/1859287_6eb33cfb76_280.jpg
