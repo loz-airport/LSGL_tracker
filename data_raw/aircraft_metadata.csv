@@ -52,7 +52,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 494144,NA,Embraer Phenom 300E,Portugal,NA
 49d590,NA,Pilatus PC-12 NGX,Czechia,https://t.plnspttrs.net/48039/1860915_1fc20030ef_280.jpg
 49d5e2,NA,Pilatus PC-12 NGX,Czechia,NA
-49d628,OKUTC,,Czechia,NA
+49d628,NA,NA,Czechia,NA
 4aaa0b,NA,NA,Sweden,NA
 4aca73,NA,Embraer E195LR,Sweden,https://t.plnspttrs.net/00479/1843022_a7f5013659_280.jpg
 4b0544,NA,NA,NA,NA
@@ -107,7 +107,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b2f91,NA,BRM Aero Bristell B23,Switzerland,NA
 4b303f,HBSHB,,Switzerland,NA
 4b32fd,RGA03,Airbus Helicopters H145,Switzerland,NA
-4b32fe,RGA04,Airbus Helicopters H145,Switzerland,NA
+4b32fe,RGAIC,Airbus Helicopters H145,Switzerland,NA
 4b3300,RGA04,Airbus Helicopters H145,Switzerland,NA
 4b3301,NA,Airbus Helicopters H145,Switzerland,NA
 4b3302,RGA15,Airbus Helicopters H145,Switzerland,NA
