@@ -61,7 +61,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b0618,NA,F172P,Switzerland,NA
 4b08c3,NA,M20J,Switzerland,https://t.plnspttrs.net/44915/1256337_eb14628389_280.jpg
 4b0b24,HBEFS,CEA DR 220,Switzerland,NA
-4b0c39,NA,NA,Switzerland,NA
+4b0c39,HBEQJ,,Switzerland,NA
 4b0e27,NA,Pilatus PC-12 NGX,Switzerland,https://t.plnspttrs.net/07832/1808083_662320d15d_280.jpg
 4b0e59,HBFLH,PC-6/B2-H4,Switzerland,https://t.plnspttrs.net/30951/1851802_1be1d0aa85_280.jpg
 4b0f50,NA,NA,Switzerland,https://t.plnspttrs.net/46667/1561740_ae8b8dbd0d_280.jpg
@@ -167,7 +167,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4d2016,NA,Pilatus PC-12 NGX,Malta,https://t.plnspttrs.net/25763/1857422_b8b79a6767_280.jpg
 4d217d,NA,NA,Malta,https://t.plnspttrs.net/33960/964648_9498cf2c53_280.jpg
 5004ea,T7AVB,NA,NA,NA
-502d29,BTI69W,A220-300,Latvia,https://t.plnspttrs.net/05671/1859287_6eb33cfb76_280.jpg
+502d29,NA,A220-300,Latvia,https://t.plnspttrs.net/05671/1859287_6eb33cfb76_280.jpg
 502d3e,NA,A220-300,Latvia,https://t.plnspttrs.net/08432/1865852_8b1b9745b5_280.jpg
 a03164,NA,PA46-500TP,United States,NA
 a14d7c,N183TB,TBM 700,United States,https://t.plnspttrs.net/44604/1217684_d1af780086_280.jpg
