@@ -2,7 +2,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 01020a,NA,A320-251N,Egypt,https://t.plnspttrs.net/11261/1844971_922a805a0b_280.jpg
 300781,NA,E195LR,Italy,https://t.plnspttrs.net/23274/1832477_84910444f6_280.jpg
 346303,IBE06AV,,Spain,https://t.plnspttrs.net/01131/1872166_59e8b58496_280.jpg
-398800,FHCAA,DR.400 180 Regent,France,NA
+398800,NA,DR.400 180 Regent,France,NA
 39bc27,NA,429 Global Ranger,France,https://t.plnspttrs.net/46287/1852514_5a97922d57_280.jpg
 39c9ae,NA,NA,France,NA
 39d170,FHULQ,NA,NA,NA
@@ -113,7 +113,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b2f91,NA,BRM Aero Bristell B23,Switzerland,NA
 4b303f,HBSHB,,Switzerland,NA
 4b32fd,RGA03,Airbus Helicopters H145,Switzerland,NA
-4b32fe,RGAIC,Airbus Helicopters H145,Switzerland,NA
+4b32fe,NA,Airbus Helicopters H145,Switzerland,NA
 4b3300,RGA04,Airbus Helicopters H145,Switzerland,NA
 4b3301,NA,Airbus Helicopters H145,Switzerland,NA
 4b3302,RGA15,Airbus Helicopters H145,Switzerland,NA
@@ -139,7 +139,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b413f,NA,Vans RV-7,Switzerland,NA
 4b4271,AGV01,EC135 T3 (CPDS),Switzerland,https://t.plnspttrs.net/29227/1303269_398ce69216_280.jpg
 4b4381,NA,NA,NA,NA
-4b442a,HBZVE,,Switzerland,https://t.plnspttrs.net/01625/1864216_d8fce811d4_280.jpg
+4b442a,NA,NA,Switzerland,https://t.plnspttrs.net/01625/1864216_d8fce811d4_280.jpg
 4b443c,HBZVW,,Switzerland,NA
 4b4455,HBZWV,,Switzerland,https://t.plnspttrs.net/01048/1532833_1fc02ea61a_280.jpg
 4b4471,HBZXX,Airbus Helicopters H125,Switzerland,NA
