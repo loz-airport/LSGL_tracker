@@ -17,10 +17,10 @@ ICAO24,call_sign,model,origin_country,photo_url
 3d4973,DFABJ,Pilatus PC-12 NGX,Germany,https://t.plnspttrs.net/08281/1880324_c9bd3cf315_280.jpg
 3d5453,NA,NA,Germany,https://t.plnspttrs.net/49261/1789861_c1abe676cc_280.jpg
 3d602e,NA,SOCATA TBM 700 B,Germany,https://t.plnspttrs.net/18051/1830338_a39aa96ed6_280.jpg
-3e1f3b,DIDAH,B200GT,Germany,https://t.plnspttrs.net/32322/1799559_52bd2a3eae_280.jpg
+3e1f3b,NA,B200GT,Germany,https://t.plnspttrs.net/32322/1799559_52bd2a3eae_280.jpg
 406540,NA,NA,United Kingdom,https://t.plnspttrs.net/46068/1840313_781c9ee546_280.jpg
 424c76,MCITY,Daher TBM-960,Isle Of Man,NA
-424ca4,MSAFE,NA,NA,NA
+424ca4,NA,NA,NA,NA
 44001f,NA,NA,Austria,https://t.plnspttrs.net/03532/1860976_a5f94656eb_280.jpg
 440080,NA,NA,Austria,https://t.plnspttrs.net/20901/1839577_741e294c9a_280.jpg
 440141,NA,NA,Austria,https://t.plnspttrs.net/48874/1871742_3a327d6643_280.jpg
@@ -43,7 +43,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 461f35,NA,A319 112,Finland,https://t.plnspttrs.net/24723/1855186_f3a843bcf7_280.jpg
 461fbd,OHMAN,,Finland,https://t.plnspttrs.net/22892/1800304_b3d3916b0c_280.jpg
 4627c1,OHPBL,,Finland,https://t.plnspttrs.net/33448/1800438_4884e9b7a6_280.jpg
-462d44,FSF207A,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/13970/1525640_e7d2a4d825_280.jpg
+462d44,NA,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/13970/1525640_e7d2a4d825_280.jpg
 462dd1,NA,NA,Finland,https://t.plnspttrs.net/45644/1822419_ae20eb8344_280.jpg
 46316e,FSF403F,PC-12/47E NG,Finland,https://t.plnspttrs.net/34201/1864542_4f8758dc66_280.jpg
 463434,NA,Pilatus PC-12/47E,Finland,https://t.plnspttrs.net/29993/1482115_d95f334040_280.jpg
@@ -60,7 +60,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b059a,NA,F177RG,Switzerland,https://t.plnspttrs.net/32383/1205300_43c0f084e7_280.jpg
 4b0618,NA,F172P,Switzerland,NA
 4b08c3,NA,M20J,Switzerland,https://t.plnspttrs.net/44915/1256337_eb14628389_280.jpg
-4b0b24,HBEFS,CEA DR 220,Switzerland,NA
+4b0b24,NA,CEA DR 220,Switzerland,NA
 4b0c39,HBEQJ,,Switzerland,NA
 4b0e27,NA,Pilatus PC-12 NGX,Switzerland,https://t.plnspttrs.net/07832/1808083_662320d15d_280.jpg
 4b0e59,HBFLH,PC-6/B2-H4,Switzerland,https://t.plnspttrs.net/30951/1851802_1be1d0aa85_280.jpg
