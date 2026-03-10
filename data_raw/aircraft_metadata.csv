@@ -112,7 +112,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b1b89,HBKLD,,Switzerland,https://t.plnspttrs.net/40634/1482746_e656b95b2f_280.jpg
 4b1b9d,HBKLX,Robin DR-400/140B,Switzerland,https://t.plnspttrs.net/26556/1761440_0ec2901d8d_280.jpg
 4b1ba0,HBKMA,SR22T,Switzerland,https://t.plnspttrs.net/33756/682282_8167e6b5a7_280.jpg
-4b1bad,HBKMN,SR22T,Switzerland,https://t.plnspttrs.net/36777/1575253_e3f3bbcae2_280.jpg
+4b1bad,NA,SR22T,Switzerland,https://t.plnspttrs.net/36777/1575253_e3f3bbcae2_280.jpg
 4b1bae,NA,SR22,Switzerland,https://t.plnspttrs.net/48956/1298198_552377a643_280.jpg
 4b1baf,NA,SR22,Switzerland,https://t.plnspttrs.net/21113/1160906_7b0fbe5e8b_280.jpg
 4b1bb6,HBKMW,,Switzerland,https://t.plnspttrs.net/28309/1683443_2f0b9bc44a_280.jpg
@@ -123,7 +123,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b1bdf,NA,TBM700 B,Switzerland,https://t.plnspttrs.net/47840/361507_6ed80536c8_280.jpg
 4b1bf6,HBKPI,Tecnam P-Mentor,Switzerland,https://t.plnspttrs.net/49102/1884748_d2b5426bca_280.jpg
 4b1bfb,HBKPN,TB 20,Switzerland,https://t.plnspttrs.net/22562/1281648_c7966d4663_280.jpg
-4b1bfd,HBKPP,,Switzerland,NA
+4b1bfd,HBKPP,,Switzerland,https://t.plnspttrs.net/32266/1464357_666bef3203_280.jpg
 4b1c04,HBKPW,Tecnam P2010 P TwentyTen,Switzerland,NA
 4b1c5c,HBKTG,F.260D,Switzerland,https://t.plnspttrs.net/16602/686899_f53c620025_280.jpg
 4b1c62,HBKTM,,Switzerland,NA
@@ -144,7 +144,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b2919,NA,PA-28-236,Switzerland,NA
 4b2964,HBPRO,,Switzerland,https://t.plnspttrs.net/07897/1460887_8f780557fd_280.jpg
 4b2f91,NA,BRM Aero Bristell B23,Switzerland,NA
-4b303f,HBSHB,,Switzerland,NA
+4b303f,NA,NA,Switzerland,NA
 4b32fd,RGA03,Airbus Helicopters H145,Switzerland,NA
 4b32fe,NA,Airbus Helicopters H145,Switzerland,NA
 4b3300,NA,Airbus Helicopters H145,Switzerland,NA
@@ -181,7 +181,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b439e,HBZPU,,Switzerland,NA
 4b442a,NA,NA,Switzerland,https://t.plnspttrs.net/01625/1864216_d8fce811d4_280.jpg
 4b443c,NA,NA,Switzerland,NA
-4b4455,HBZWV,,Switzerland,https://t.plnspttrs.net/01048/1532833_1fc02ea61a_280.jpg
+4b4455,HBZWV,,Switzerland,NA
 4b4471,HBZXX,Airbus Helicopters H125,Switzerland,NA
 4b447c,NA,NA,Switzerland,https://t.plnspttrs.net/49395/1777577_c383528177_280.jpg
 4b4488,NA,Guimbal Cabri G2,Switzerland,https://t.plnspttrs.net/13376/1725780_596a589053_280.jpg
@@ -201,7 +201,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4d02a5,NA,NA,Luxembourg,https://t.plnspttrs.net/22364/1343577_41833d096d_280.jpg
 4d02ab,JFA08K,PC-XII 47,Luxembourg,https://t.plnspttrs.net/48364/1655067_4f6b5a5780_280.jpg
 4d02ad,NA,PC-XII 47E,Luxembourg,NA
-4d02b0,JFA10C,,Luxembourg,https://t.plnspttrs.net/07739/1744548_2c9e576d9e_280.jpg
+4d02b0,JFA10C,,Luxembourg,NA
 4d02b7,JFA41W,,Luxembourg,https://t.plnspttrs.net/21895/1754911_0714c18710_280.jpg
 4d02bc,JFA14U,,Luxembourg,https://t.plnspttrs.net/14788/1876039_24ecb2daa0_280.jpg
 4d02bd,JFA30K,,Luxembourg,https://t.plnspttrs.net/25336/1812280_fed442fa97_280.jpg
