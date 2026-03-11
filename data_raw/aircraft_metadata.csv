@@ -10,7 +10,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 39bc27,NA,429 Global Ranger,France,https://t.plnspttrs.net/46287/1852514_5a97922d57_280.jpg
 39c9ae,NA,NA,France,NA
 39d170,FHULQ,NA,NA,NA
-39d565,FHVLF,Cirrus SR22,France,https://t.plnspttrs.net/14529/1543055_b6ca406e88_280.jpg
+39d565,NA,Cirrus SR22,France,https://t.plnspttrs.net/14529/1543055_b6ca406e88_280.jpg
 3b7b37,DRAGO741,,France,NA
 3c4dcd,NA,CRJ 900 LR NG,Germany,https://t.plnspttrs.net/14587/1704668_79fc412b0e_280.jpg
 3c6594,NA,A319 114,Germany,https://t.plnspttrs.net/20806/1811468_20192a9b55_280.jpg
@@ -151,7 +151,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b3301,RGA04,Airbus Helicopters H145,Switzerland,NA
 4b3302,RGA15,Airbus Helicopters H145,Switzerland,NA
 4b3303,RGA04,Airbus Helicopters H145,Switzerland,NA
-4b3304,RGA02,NA,NA,NA
+4b3304,NA,NA,NA,NA
 4b3305,RGA18,NA,NA,NA
 4b3306,NA,NA,NA,NA
 4b34c2,NA,Cessna Turbo Skylane TC,Switzerland,NA
@@ -181,7 +181,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b439e,HBZPU,,Switzerland,NA
 4b442a,NA,NA,Switzerland,https://t.plnspttrs.net/01625/1864216_d8fce811d4_280.jpg
 4b443c,NA,NA,Switzerland,NA
-4b4455,HBZWV,,Switzerland,https://t.plnspttrs.net/01048/1532833_1fc02ea61a_280.jpg
+4b4455,HBZWV,,Switzerland,NA
 4b4471,HBZXX,Airbus Helicopters H125,Switzerland,NA
 4b447c,NA,NA,Switzerland,https://t.plnspttrs.net/49395/1777577_c383528177_280.jpg
 4b4488,NA,Guimbal Cabri G2,Switzerland,https://t.plnspttrs.net/13376/1725780_596a589053_280.jpg
@@ -197,13 +197,13 @@ ICAO24,call_sign,model,origin_country,photo_url
 4bb285,NA,NA,Turkey,https://t.plnspttrs.net/18414/1879501_d9ba4aa59c_280.jpg
 4bc8c6,NA,Airbus A321-251NX,Turkey,https://t.plnspttrs.net/29388/1857249_f451fa548d_280.jpg
 4cad93,NA,Airbus A320-251N,Ireland,https://t.plnspttrs.net/49139/1869808_400662235c_280.jpg
-4d02a4,JFA08L,PC-XII 47E,Luxembourg,NA
+4d02a4,NA,PC-XII 47E,Luxembourg,NA
 4d02a5,NA,NA,Luxembourg,https://t.plnspttrs.net/22364/1343577_41833d096d_280.jpg
 4d02ab,JFA08K,PC-XII 47,Luxembourg,https://t.plnspttrs.net/48364/1655067_4f6b5a5780_280.jpg
 4d02ad,NA,PC-XII 47E,Luxembourg,NA
 4d02b0,JFA10C,,Luxembourg,https://t.plnspttrs.net/07739/1744548_2c9e576d9e_280.jpg
 4d02b7,JFA41W,,Luxembourg,https://t.plnspttrs.net/21895/1754911_0714c18710_280.jpg
-4d02bc,JFA14U,,Luxembourg,https://t.plnspttrs.net/14788/1876039_24ecb2daa0_280.jpg
+4d02bc,JFA14U,,Luxembourg,NA
 4d02bd,JFA30K,,Luxembourg,https://t.plnspttrs.net/25336/1812280_fed442fa97_280.jpg
 4d02bf,JFA94N,Pilatus PC-12 NGX,Luxembourg,https://t.plnspttrs.net/27745/1710421_e41aba3de3_280.jpg
 4d02dc,NA,PC-12/47E NGX,Luxembourg,https://t.plnspttrs.net/10169/1843727_bcc55a7a5a_280.jpg
