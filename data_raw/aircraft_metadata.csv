@@ -128,7 +128,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b1c5c,HBKTG,F.260D,Switzerland,https://t.plnspttrs.net/16602/686899_f53c620025_280.jpg
 4b1c62,HBKTM,,Switzerland,NA
 4b1c63,NA,BRM Aero Bristell B23,Switzerland,NA
-4b1e44,HBLMA,Diamond DA 42-VI,Switzerland,NA
+4b1e44,NA,Diamond DA 42-VI,Switzerland,NA
 4b22ff,HBNGP,,Switzerland,https://t.plnspttrs.net/46905/1893936_29e68ea008_280.jpg
 4b23e0,HBNPG,,Switzerland,NA
 4b23e8,HBNPO,NA,NA,NA
@@ -204,7 +204,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4d02b0,JFA10C,,Luxembourg,https://t.plnspttrs.net/07739/1744548_2c9e576d9e_280.jpg
 4d02b7,JFA41W,,Luxembourg,https://t.plnspttrs.net/21895/1754911_0714c18710_280.jpg
 4d02bc,JFA14U,,Luxembourg,https://t.plnspttrs.net/14788/1876039_24ecb2daa0_280.jpg
-4d02bd,JFA30K,,Luxembourg,https://t.plnspttrs.net/25336/1812280_fed442fa97_280.jpg
+4d02bd,NA,NA,Luxembourg,https://t.plnspttrs.net/25336/1812280_fed442fa97_280.jpg
 4d02bf,JFA94N,Pilatus PC-12 NGX,Luxembourg,https://t.plnspttrs.net/27745/1710421_e41aba3de3_280.jpg
 4d02dc,NA,PC-12/47E NGX,Luxembourg,https://t.plnspttrs.net/10169/1843727_bcc55a7a5a_280.jpg
 4d02dd,JFA94Y,,Luxembourg,https://t.plnspttrs.net/29913/1896986_b6e827d72d_280.jpg
@@ -218,9 +218,9 @@ ICAO24,call_sign,model,origin_country,photo_url
 8964a1,UAE83,Boeing 777-300(ER),United Arab Emirates,https://t.plnspttrs.net/10977/1888024_5df5704d5c_280.jpg
 a03164,NA,PA46-500TP,United States,NA
 a03c15,N114LM,SR22T,United States,NA
-a14d7c,N183TB,TBM 700,United States,https://t.plnspttrs.net/44604/1217684_d1af780086_280.jpg
+a14d7c,NA,TBM 700,United States,https://t.plnspttrs.net/44604/1217684_d1af780086_280.jpg
 a1e6db,NA,PC-12/47E,United States,NA
 a34bb1,N311MX,PA-46-600TP,United States,NA
-a4330b,N37SJ,SR22T,United States,https://t.plnspttrs.net/17428/1439053_edf6e2a193_280.jpg
+a4330b,NA,SR22T,United States,https://t.plnspttrs.net/17428/1439053_edf6e2a193_280.jpg
 abb748,N854MA,PA-46-600TP,United States,NA
 acbfe5,N920TT,C90A,United States,NA
