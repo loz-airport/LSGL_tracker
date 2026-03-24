@@ -9,7 +9,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 398800,NA,DR.400 180 Regent,France,NA
 39bc27,NA,429 Global Ranger,France,https://t.plnspttrs.net/46287/1852514_5a97922d57_280.jpg
 39c9ae,NA,NA,France,NA
-39d170,FHULQ,NA,NA,NA
+39d170,NA,NA,NA,NA
 39d565,NA,Cirrus SR22,France,https://t.plnspttrs.net/14529/1543055_b6ca406e88_280.jpg
 3b7b37,DRAGO741,,France,NA
 3c4dcd,NA,CRJ 900 LR NG,Germany,https://t.plnspttrs.net/14587/1704668_79fc412b0e_280.jpg
@@ -223,4 +223,4 @@ a1e6db,NA,PC-12/47E,United States,NA
 a34bb1,N311MX,PA-46-600TP,United States,NA
 a4330b,NA,SR22T,United States,https://t.plnspttrs.net/17428/1439053_edf6e2a193_280.jpg
 abb748,N854MA,PA-46-600TP,United States,NA
-acbfe5,N920TT,C90A,United States,NA
+acbfe5,NA,C90A,United States,NA
