@@ -27,7 +27,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 3d602e,NA,SOCATA TBM 700 B,Germany,https://t.plnspttrs.net/18051/1830338_a39aa96ed6_280.jpg
 3e1f3b,NA,B200GT,Germany,https://t.plnspttrs.net/32322/1799559_52bd2a3eae_280.jpg
 406540,NA,NA,United Kingdom,https://t.plnspttrs.net/46068/1840313_781c9ee546_280.jpg
-4073cd,GPCIZ,,United Kingdom,https://t.plnspttrs.net/40353/1525944_e6caf95257_280.jpg
+4073cd,GPCIZ,,United Kingdom,https://t.plnspttrs.net/42947/1906333_bbc207faf4_280.jpg
 424c76,MCITY,Daher TBM-960,Isle Of Man,NA
 424ca4,NA,NA,NA,NA
 44001f,NA,NA,Austria,https://t.plnspttrs.net/03532/1860976_a5f94656eb_280.jpg
@@ -108,7 +108,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b1b0e,HBKGK,,Switzerland,NA
 4b1b11,HBKGN,,Switzerland,NA
 4b1b1a,HBKGW,,Switzerland,NA
-4b1b1b,HBKGX,,Switzerland,NA
+4b1b1b,NA,NA,Switzerland,NA
 4b1b89,HBKLD,,Switzerland,https://t.plnspttrs.net/40634/1482746_e656b95b2f_280.jpg
 4b1b9d,HBKLX,Robin DR-400/140B,Switzerland,https://t.plnspttrs.net/26556/1761440_0ec2901d8d_280.jpg
 4b1ba0,HBKMA,SR22T,Switzerland,https://t.plnspttrs.net/33756/682282_8167e6b5a7_280.jpg
@@ -123,7 +123,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b1bdf,NA,TBM700 B,Switzerland,https://t.plnspttrs.net/47840/361507_6ed80536c8_280.jpg
 4b1bf6,HBKPI,Tecnam P-Mentor,Switzerland,https://t.plnspttrs.net/49102/1884748_d2b5426bca_280.jpg
 4b1bfb,HBKPN,TB 20,Switzerland,https://t.plnspttrs.net/22562/1281648_c7966d4663_280.jpg
-4b1bfd,HBKPP,,Switzerland,https://t.plnspttrs.net/32266/1464357_666bef3203_280.jpg
+4b1bfd,NA,NA,Switzerland,https://t.plnspttrs.net/32266/1464357_666bef3203_280.jpg
 4b1c04,HBKPW,Tecnam P2010 P TwentyTen,Switzerland,NA
 4b1c5c,HBKTG,F.260D,Switzerland,https://t.plnspttrs.net/16602/686899_f53c620025_280.jpg
 4b1c62,HBKTM,,Switzerland,NA
@@ -202,7 +202,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4d02ab,NA,PC-XII 47,Luxembourg,https://t.plnspttrs.net/48364/1655067_4f6b5a5780_280.jpg
 4d02ad,NA,PC-XII 47E,Luxembourg,NA
 4d02b0,JFA10C,,Luxembourg,https://t.plnspttrs.net/07739/1744548_2c9e576d9e_280.jpg
-4d02b7,JFA41W,,Luxembourg,https://t.plnspttrs.net/21895/1754911_0714c18710_280.jpg
+4d02b7,JFA41W,,Luxembourg,NA
 4d02bc,JFA14U,,Luxembourg,https://t.plnspttrs.net/14788/1876039_24ecb2daa0_280.jpg
 4d02bd,NA,NA,Luxembourg,https://t.plnspttrs.net/25336/1812280_fed442fa97_280.jpg
 4d02bf,JFA94N,Pilatus PC-12 NGX,Luxembourg,https://t.plnspttrs.net/27745/1710421_e41aba3de3_280.jpg
