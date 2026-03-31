@@ -124,7 +124,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b1bf6,HBKPI,Tecnam P-Mentor,Switzerland,https://t.plnspttrs.net/49102/1884748_d2b5426bca_280.jpg
 4b1bfb,NA,TB 20,Switzerland,https://t.plnspttrs.net/22562/1281648_c7966d4663_280.jpg
 4b1bfd,NA,NA,Switzerland,https://t.plnspttrs.net/32266/1464357_666bef3203_280.jpg
-4b1c04,HBKPW,Tecnam P2010 P TwentyTen,Switzerland,NA
+4b1c04,NA,Tecnam P2010 P TwentyTen,Switzerland,NA
 4b1c5c,HBKTG,F.260D,Switzerland,https://t.plnspttrs.net/16602/686899_f53c620025_280.jpg
 4b1c62,HBKTM,,Switzerland,NA
 4b1c63,NA,BRM Aero Bristell B23,Switzerland,NA
@@ -142,7 +142,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b2841,NA,Piper PA-28-236,Switzerland,https://t.plnspttrs.net/26214/1830026_6e0997a86a_280.jpg
 4b28b1,HBPKR,PA-28-181,Switzerland,NA
 4b2919,NA,PA-28-236,Switzerland,NA
-4b2964,HBPRO,,Switzerland,https://t.plnspttrs.net/07897/1460887_8f780557fd_280.jpg
+4b2964,NA,NA,Switzerland,https://t.plnspttrs.net/07897/1460887_8f780557fd_280.jpg
 4b2f91,NA,BRM Aero Bristell B23,Switzerland,NA
 4b303f,NA,NA,Switzerland,NA
 4b32fd,RGA03,Airbus Helicopters H145,Switzerland,NA
@@ -209,7 +209,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4d02dc,NA,PC-12/47E NGX,Luxembourg,https://t.plnspttrs.net/10169/1843727_bcc55a7a5a_280.jpg
 4d02dd,NA,NA,Luxembourg,https://t.plnspttrs.net/29913/1896986_b6e827d72d_280.jpg
 4d02de,NA,NA,Luxembourg,https://t.plnspttrs.net/38685/810293_efe63e446b_280.jpg
-4d02e3,JFA66S,,Luxembourg,https://t.plnspttrs.net/45644/1775284_8f68597e0d_280.jpg
+4d02e3,JFA66S,,Luxembourg,NA
 4d2016,NA,Pilatus PC-12 NGX,Malta,https://t.plnspttrs.net/25763/1857422_b8b79a6767_280.jpg
 4d217d,NA,NA,Malta,https://t.plnspttrs.net/33960/964648_9498cf2c53_280.jpg
 5004ea,T7AVB,NA,NA,NA
