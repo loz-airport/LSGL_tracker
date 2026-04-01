@@ -21,7 +21,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 3cef03,NA,NA,NA,https://t.plnspttrs.net/09962/1813664_4c4f76a174_280.jpg
 3d24d3,DEMET,Katana DV20,Germany,NA
 3d287f,NA,NA,Germany,https://t.plnspttrs.net/20060/897489_c30a91a2d0_280.jpg
-3d3d69,DEVMV,NA,NA,NA
+3d3d69,NA,NA,NA,NA
 3d4973,NA,Pilatus PC-12 NGX,Germany,https://t.plnspttrs.net/08281/1880324_c9bd3cf315_280.jpg
 3d5453,NA,NA,Germany,https://t.plnspttrs.net/49261/1789861_c1abe676cc_280.jpg
 3d602e,NA,SOCATA TBM 700 B,Germany,https://t.plnspttrs.net/18051/1830338_a39aa96ed6_280.jpg
@@ -50,14 +50,14 @@ ICAO24,call_sign,model,origin_country,photo_url
 460d8a,NA,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/03696/1758948_0ee80847cc_280.jpg
 460f46,NA,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/02928/1800815_8a26fc6073_280.jpg
 46104c,NA,NA,NA,NA
-461553,FSF532A,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/49412/1776832_0fb8eb6023_280.jpg
+461553,NA,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/49412/1776832_0fb8eb6023_280.jpg
 461838,OHJEM,PC-12/47E,Finland,https://t.plnspttrs.net/37738/1521489_d5491db58a_280.jpg
 461f35,NA,A319 112,Finland,https://t.plnspttrs.net/24723/1855186_f3a843bcf7_280.jpg
 461fbd,OHMAN,,Finland,https://t.plnspttrs.net/22892/1800304_b3d3916b0c_280.jpg
 4627c1,FSF640K,,Finland,https://t.plnspttrs.net/33448/1800438_4884e9b7a6_280.jpg
 462d44,NA,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/13970/1525640_e7d2a4d825_280.jpg
 462dd1,NA,NA,Finland,https://t.plnspttrs.net/45644/1822419_ae20eb8344_280.jpg
-46316e,FSF222A,PC-12/47E NG,Finland,https://t.plnspttrs.net/34201/1864542_4f8758dc66_280.jpg
+46316e,NA,PC-12/47E NG,Finland,https://t.plnspttrs.net/34201/1864542_4f8758dc66_280.jpg
 463434,NA,Pilatus PC-12/47E,Finland,https://t.plnspttrs.net/29993/1482115_d95f334040_280.jpg
 463fc8,NA,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/04396/1779975_64f09f738b_280.jpg
 47a185,NA,737-8JP (W),Norway,https://t.plnspttrs.net/00701/1897078_fb2bc34f02_280.jpg
@@ -81,12 +81,12 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b0b24,NA,CEA DR 220,Switzerland,NA
 4b0b79,HBEIZ,P35,Switzerland,https://t.plnspttrs.net/23953/1321562_6c7b335e74_280.jpg
 4b0c39,NA,NA,Switzerland,NA
-4b0cd2,HBEWG,F33A,Switzerland,NA
+4b0cd2,NA,F33A,Switzerland,NA
 4b0d41,HBFAN,Pilatus PC-6/350-H2 Porter,Switzerland,https://t.plnspttrs.net/09744/1780030_373034ced3_280.jpg
 4b0e27,NA,Pilatus PC-12 NGX,Switzerland,https://t.plnspttrs.net/07832/1808083_662320d15d_280.jpg
 4b0e59,NA,PC-6/B2-H4,Switzerland,https://t.plnspttrs.net/30951/1851802_1be1d0aa85_280.jpg
 4b0f50,NA,NA,Switzerland,https://t.plnspttrs.net/46667/1561740_ae8b8dbd0d_280.jpg
-4b0f70,HBFWA,PC-12/47E,Switzerland,https://t.plnspttrs.net/39734/1788015_a75483d188_280.jpg
+4b0f70,NA,PC-12/47E,Switzerland,https://t.plnspttrs.net/39734/1788015_a75483d188_280.jpg
 4b0f7e,NA,NA,Switzerland,https://t.plnspttrs.net/20687/1528068_5b4dfdb9fb_280.jpg
 4b0f8e,NA,Pilatus PC-12 NGX,Switzerland,https://t.plnspttrs.net/39250/1509724_23b502f1fa_280.jpg
 4b1617,NA,A320-214,Switzerland,https://t.plnspttrs.net/13429/1852844_bf5fcb2f27_280.jpg
@@ -150,7 +150,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b3300,NA,Airbus Helicopters H145,Switzerland,NA
 4b3301,RGA04,Airbus Helicopters H145,Switzerland,NA
 4b3302,RGA15,Airbus Helicopters H145,Switzerland,NA
-4b3303,RGA04,Airbus Helicopters H145,Switzerland,NA
+4b3303,RGAIH,Airbus Helicopters H145,Switzerland,NA
 4b3304,NA,NA,NA,NA
 4b3305,RGA18,NA,NA,NA
 4b3306,NA,NA,NA,NA
