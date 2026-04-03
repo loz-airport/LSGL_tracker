@@ -45,7 +45,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 44cc44,NA,Airbus A320-251N,Belgium,https://t.plnspttrs.net/15767/1894775_5f1aef34db_280.jpg
 460812,FSF303A,,Finland,https://t.plnspttrs.net/33875/1904620_9b40773d7c_280.jpg
 460844,NA,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/39836/1875193_ecb1915b22_280.jpg
-460861,JFA43Z,Pilatus PC-XII NG 47E,Finland,https://t.plnspttrs.net/00490/1609296_6cdb66e86a_280.jpg
+460861,OHDEN,Pilatus PC-XII NG 47E,Finland,https://t.plnspttrs.net/00490/1609296_6cdb66e86a_280.jpg
 46097d,OHDPL,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/07040/1539486_1649593583_280.jpg
 460d8a,NA,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/03696/1758948_0ee80847cc_280.jpg
 460f46,NA,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/02928/1800815_8a26fc6073_280.jpg
@@ -118,7 +118,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b1bb6,HBKMW,,Switzerland,https://t.plnspttrs.net/28309/1683443_2f0b9bc44a_280.jpg
 4b1bb7,HBKMX,P2008 JC,Switzerland,https://t.plnspttrs.net/28029/1498195_6a4a8cdcce_280.jpg
 4b1bc8,NA,Tecnam P2008JC MkII,Switzerland,NA
-4b1bcd,HBKNT,Tecnam P2008JC MkII,Switzerland,NA
+4b1bcd,NA,Tecnam P2008JC MkII,Switzerland,NA
 4b1bdd,NA,DR-400/140B Major,Switzerland,https://t.plnspttrs.net/33048/1661727_a208319904_280.jpg
 4b1bdf,NA,TBM700 B,Switzerland,https://t.plnspttrs.net/47840/361507_6ed80536c8_280.jpg
 4b1bf6,NA,Tecnam P-Mentor,Switzerland,https://t.plnspttrs.net/49102/1884748_d2b5426bca_280.jpg
@@ -126,7 +126,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b1bfd,NA,NA,Switzerland,https://t.plnspttrs.net/32266/1464357_666bef3203_280.jpg
 4b1c04,NA,Tecnam P2010 P TwentyTen,Switzerland,NA
 4b1c5c,NA,F.260D,Switzerland,https://t.plnspttrs.net/16602/686899_f53c620025_280.jpg
-4b1c62,HBKTM,,Switzerland,NA
+4b1c62,NA,NA,Switzerland,NA
 4b1c63,NA,BRM Aero Bristell B23,Switzerland,NA
 4b1e44,NA,Diamond DA 42-VI,Switzerland,NA
 4b22ff,HBNGP,,Switzerland,https://t.plnspttrs.net/46905/1893936_29e68ea008_280.jpg
@@ -181,7 +181,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b439e,NA,NA,Switzerland,NA
 4b442a,NA,NA,Switzerland,https://t.plnspttrs.net/01625/1864216_d8fce811d4_280.jpg
 4b443c,NA,NA,Switzerland,NA
-4b4455,HBZWV,,Switzerland,https://t.plnspttrs.net/01048/1532833_1fc02ea61a_280.jpg
+4b4455,NA,NA,Switzerland,https://t.plnspttrs.net/01048/1532833_1fc02ea61a_280.jpg
 4b4471,NA,Airbus Helicopters H125,Switzerland,NA
 4b447c,NA,NA,Switzerland,https://t.plnspttrs.net/49395/1777577_c383528177_280.jpg
 4b4488,NA,Guimbal Cabri G2,Switzerland,https://t.plnspttrs.net/13376/1725780_596a589053_280.jpg
