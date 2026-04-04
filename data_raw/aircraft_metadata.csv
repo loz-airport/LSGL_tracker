@@ -53,7 +53,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 461553,NA,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/49412/1776832_0fb8eb6023_280.jpg
 461838,OHJEM,PC-12/47E,Finland,https://t.plnspttrs.net/37738/1521489_d5491db58a_280.jpg
 461f35,NA,A319 112,Finland,https://t.plnspttrs.net/24723/1855186_f3a843bcf7_280.jpg
-461fbd,OHMAN,,Finland,https://t.plnspttrs.net/22892/1800304_b3d3916b0c_280.jpg
+461fbd,NA,NA,Finland,https://t.plnspttrs.net/22892/1800304_b3d3916b0c_280.jpg
 4627c1,FSF640K,,Finland,https://t.plnspttrs.net/33448/1800438_4884e9b7a6_280.jpg
 462d44,NA,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/13970/1525640_e7d2a4d825_280.jpg
 462dd1,NA,NA,Finland,https://t.plnspttrs.net/45644/1822419_ae20eb8344_280.jpg
@@ -170,7 +170,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b4089,NA,RV-6,Switzerland,https://t.plnspttrs.net/39772/1219654_ce00c8421c_280.jpg
 4b40a1,NA,NA,Switzerland,https://t.plnspttrs.net/27668/1883734_f9280611e3_280.jpg
 4b40c8,NA,RV-7A,Switzerland,NA
-4b411c,HBYRC,,Switzerland,NA
+4b411c,NA,NA,Switzerland,NA
 4b4126,HBYRM,RV-7,Switzerland,NA
 4b413c,NA,NA,Switzerland,https://t.plnspttrs.net/04884/1526113_663d1a4c9b_280.jpg
 4b413f,NA,Vans RV-7,Switzerland,NA
@@ -209,7 +209,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4d02dc,NA,PC-12/47E NGX,Luxembourg,https://t.plnspttrs.net/10169/1843727_bcc55a7a5a_280.jpg
 4d02dd,NA,NA,Luxembourg,https://t.plnspttrs.net/29913/1896986_b6e827d72d_280.jpg
 4d02de,NA,NA,Luxembourg,https://t.plnspttrs.net/38685/810293_efe63e446b_280.jpg
-4d02e3,JFA66S,,Luxembourg,https://t.plnspttrs.net/45644/1775284_8f68597e0d_280.jpg
+4d02e3,NA,NA,Luxembourg,https://t.plnspttrs.net/45644/1775284_8f68597e0d_280.jpg
 4d2016,NA,Pilatus PC-12 NGX,Malta,https://t.plnspttrs.net/25763/1857422_b8b79a6767_280.jpg
 4d217d,NA,NA,Malta,https://t.plnspttrs.net/33960/964648_9498cf2c53_280.jpg
 5004ea,T7AVB,NA,NA,NA
