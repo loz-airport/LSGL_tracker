@@ -5,13 +5,13 @@ ICAO24,call_sign,model,origin_country,photo_url
 3008b1,NA,NA,Italy,NA
 346303,NA,NA,NA,https://t.plnspttrs.net/10471/1898418_844f908329_280.jpg
 3802fc,NA,NA,NA,NA
-398064,FHADE,Squirrel AS.350 B3,France,NA
+398064,NA,Squirrel AS.350 B3,France,NA
 398800,NA,DR.400 180 Regent,France,NA
 39bc27,NA,429 Global Ranger,France,https://t.plnspttrs.net/46287/1852514_5a97922d57_280.jpg
 39c9ae,NA,NA,France,NA
 39d170,NA,NA,NA,NA
 39d565,NA,Cirrus SR22,France,https://t.plnspttrs.net/14529/1543055_b6ca406e88_280.jpg
-3b7b37,DRAGO741,,France,NA
+3b7b37,NA,NA,France,NA
 3c4dcd,NA,CRJ 900 LR NG,Germany,https://t.plnspttrs.net/14587/1704668_79fc412b0e_280.jpg
 3c6594,NA,A319 114,Germany,https://t.plnspttrs.net/20806/1811468_20192a9b55_280.jpg
 3c6597,NA,A319 114,Germany,https://t.plnspttrs.net/33764/1811512_ec505c168c_280.jpg
@@ -28,7 +28,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 3e1f3b,NA,B200GT,Germany,https://t.plnspttrs.net/32322/1799559_52bd2a3eae_280.jpg
 406540,NA,NA,United Kingdom,https://t.plnspttrs.net/46068/1840313_781c9ee546_280.jpg
 4073cd,NA,NA,United Kingdom,https://t.plnspttrs.net/42947/1906333_bbc207faf4_280.jpg
-424c76,MCITY,Daher TBM-960,Isle Of Man,NA
+424c76,NA,Daher TBM-960,Isle Of Man,NA
 424ca4,NA,NA,NA,NA
 44001f,NA,NA,Austria,https://t.plnspttrs.net/03532/1860976_a5f94656eb_280.jpg
 440080,NA,NA,Austria,https://t.plnspttrs.net/20901/1839577_741e294c9a_280.jpg
@@ -51,7 +51,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 460f46,NA,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/02928/1800815_8a26fc6073_280.jpg
 46104c,NA,NA,NA,NA
 461553,NA,Pilatus PC-12 NGX,Finland,https://t.plnspttrs.net/49412/1776832_0fb8eb6023_280.jpg
-461838,OHJEM,PC-12/47E,Finland,https://t.plnspttrs.net/37738/1521489_d5491db58a_280.jpg
+461838,NA,PC-12/47E,Finland,https://t.plnspttrs.net/37738/1521489_d5491db58a_280.jpg
 461f35,NA,A319 112,Finland,https://t.plnspttrs.net/24723/1855186_f3a843bcf7_280.jpg
 461fbd,NA,NA,Finland,https://t.plnspttrs.net/22892/1800304_b3d3916b0c_280.jpg
 4627c1,NA,NA,Finland,https://t.plnspttrs.net/33448/1800438_4884e9b7a6_280.jpg
@@ -63,7 +63,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 47a185,NA,737-8JP (W),Norway,https://t.plnspttrs.net/00701/1897078_fb2bc34f02_280.jpg
 4856ed,NA,NA,Kingdom of the Netherlands,https://t.plnspttrs.net/43364/1874960_67aa26a86f_280.jpg
 485a35,NA,737-8K2,Kingdom of the Netherlands,https://t.plnspttrs.net/49845/1796720_53ed523884_280.jpg
-4866f6,PHPOW,NA,NA,NA
+4866f6,NA,NA,NA,NA
 48a5b2,NA,PA-46 350P Malibu Mirage,Poland,NA
 494144,NA,Embraer Phenom 300E,Portugal,NA
 49d590,NA,Pilatus PC-12 NGX,Czechia,https://t.plnspttrs.net/48039/1860915_1fc20030ef_280.jpg
@@ -75,7 +75,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b059a,NA,F177RG,Switzerland,https://t.plnspttrs.net/32383/1205300_43c0f084e7_280.jpg
 4b0618,NA,F172P,Switzerland,NA
 4b07df,NA,T210N,Switzerland,NA
-4b0878,HBDFK,M20J,Switzerland,NA
+4b0878,NA,M20J,Switzerland,NA
 4b08aa,NA,M20J,Switzerland,NA
 4b08c3,NA,M20J,Switzerland,https://t.plnspttrs.net/44915/1256337_eb14628389_280.jpg
 4b0b24,NA,CEA DR 220,Switzerland,NA
@@ -106,17 +106,17 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b1a5f,NA,A320 214,Switzerland,https://t.plnspttrs.net/29642/1785677_8dfae7a39c_280.jpg
 4b1af2,HBKFI,ROBIN DR 400/140 B,Switzerland,https://t.plnspttrs.net/33499/1605005_231c3e9d18_280.jpg
 4b1b0e,NA,NA,Switzerland,NA
-4b1b11,HBKGN,,Switzerland,NA
+4b1b11,NA,NA,Switzerland,NA
 4b1b1a,NA,NA,Switzerland,NA
 4b1b1b,NA,NA,Switzerland,NA
-4b1b89,HBKLD,,Switzerland,https://t.plnspttrs.net/40634/1482746_e656b95b2f_280.jpg
+4b1b89,NA,NA,Switzerland,https://t.plnspttrs.net/40634/1482746_e656b95b2f_280.jpg
 4b1b9d,NA,Robin DR-400/140B,Switzerland,https://t.plnspttrs.net/26556/1761440_0ec2901d8d_280.jpg
 4b1ba0,NA,SR22T,Switzerland,https://t.plnspttrs.net/33756/682282_8167e6b5a7_280.jpg
 4b1bad,NA,SR22T,Switzerland,https://t.plnspttrs.net/36777/1575253_e3f3bbcae2_280.jpg
 4b1bae,NA,SR22,Switzerland,https://t.plnspttrs.net/48956/1298198_552377a643_280.jpg
 4b1baf,NA,SR22,Switzerland,https://t.plnspttrs.net/21113/1160906_7b0fbe5e8b_280.jpg
 4b1bb6,NA,NA,Switzerland,https://t.plnspttrs.net/28309/1683443_2f0b9bc44a_280.jpg
-4b1bb7,HBKMX,P2008 JC,Switzerland,https://t.plnspttrs.net/28029/1498195_6a4a8cdcce_280.jpg
+4b1bb7,NA,P2008 JC,Switzerland,https://t.plnspttrs.net/28029/1498195_6a4a8cdcce_280.jpg
 4b1bc8,NA,Tecnam P2008JC MkII,Switzerland,NA
 4b1bcd,NA,Tecnam P2008JC MkII,Switzerland,NA
 4b1bdd,NA,DR-400/140B Major,Switzerland,https://t.plnspttrs.net/33048/1661727_a208319904_280.jpg
@@ -132,15 +132,15 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b22ff,NA,NA,Switzerland,https://t.plnspttrs.net/46905/1893936_29e68ea008_280.jpg
 4b23e0,NA,NA,Switzerland,NA
 4b23e8,NA,NA,NA,NA
-4b25ea,HBOJI,Piper PA-28-161,Switzerland,NA
+4b25ea,NA,Piper PA-28-161,Switzerland,NA
 4b2650,NA,J3C-65/L-4.,Switzerland,NA
 4b27b7,NA,PA-28-151,Switzerland,NA
 4b27bf,NA,Piper PA-28-236,Switzerland,NA
-4b27c0,HBPBK,PA-32R-300,Switzerland,https://t.plnspttrs.net/01024/1728310_83637bfd48_280.jpg
+4b27c0,NA,PA-32R-300,Switzerland,https://t.plnspttrs.net/01024/1728310_83637bfd48_280.jpg
 4b2811,NA,PA-28-236,Switzerland,NA
 4b2837,NA,PA-28-236,Switzerland,NA
 4b2841,NA,Piper PA-28-236,Switzerland,https://t.plnspttrs.net/26214/1830026_6e0997a86a_280.jpg
-4b28b1,HBPKR,PA-28-181,Switzerland,NA
+4b28b1,NA,PA-28-181,Switzerland,NA
 4b2919,NA,PA-28-236,Switzerland,NA
 4b2964,NA,NA,Switzerland,https://t.plnspttrs.net/07897/1460887_8f780557fd_280.jpg
 4b2f91,NA,BRM Aero Bristell B23,Switzerland,NA
@@ -149,7 +149,7 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b32fe,NA,Airbus Helicopters H145,Switzerland,NA
 4b3300,NA,Airbus Helicopters H145,Switzerland,NA
 4b3301,RGA04,Airbus Helicopters H145,Switzerland,NA
-4b3302,RGA15,Airbus Helicopters H145,Switzerland,NA
+4b3302,NA,Airbus Helicopters H145,Switzerland,NA
 4b3303,NA,Airbus Helicopters H145,Switzerland,NA
 4b3304,NA,NA,NA,NA
 4b3305,NA,NA,NA,NA
@@ -159,19 +159,19 @@ ICAO24,call_sign,model,origin_country,photo_url
 4b39c9,NA,510,Switzerland,https://t.plnspttrs.net/24063/1384511_49f5de93e8_280.jpg
 4b39f0,NA,EMB-505,Switzerland,https://t.plnspttrs.net/34761/1554198_313deff642_280.jpg
 4b3d0a,NA,Bell 429 GlobalRanger,Switzerland,https://t.plnspttrs.net/36981/1862508_029b64d190_280.jpg
-4b3e19,HBXNL,NA,NA,NA
+4b3e19,NA,NA,NA,NA
 4b3e2c,NA,Airbus Helicopters H135,Switzerland,NA
 4b3e2d,NA,Airbus Helicopter H135,Switzerland,https://t.plnspttrs.net/14636/1665034_ea33e13b4b_280.jpg
 4b3e3f,NA,Leonardo AW139,Switzerland,https://t.plnspttrs.net/37224/1784323_3ac494aa92_280.jpg
 4b3e95,NA,NA,Liechtenstein,NA
 4b3ee3,NA,Bell 429 GlobalRanger,Switzerland,NA
 4b3f65,NA,NA,Switzerland,NA
-4b3fc5,HBYDX,BRÃ„NDLI BX-2,Switzerland,NA
+4b3fc5,NA,BRÃ„NDLI BX-2,Switzerland,NA
 4b4089,NA,RV-6,Switzerland,https://t.plnspttrs.net/39772/1219654_ce00c8421c_280.jpg
 4b40a1,NA,NA,Switzerland,https://t.plnspttrs.net/27668/1883734_f9280611e3_280.jpg
 4b40c8,NA,RV-7A,Switzerland,NA
 4b411c,NA,NA,Switzerland,NA
-4b4126,HBYRM,RV-7,Switzerland,NA
+4b4126,NA,RV-7,Switzerland,NA
 4b413c,NA,NA,Switzerland,https://t.plnspttrs.net/04884/1526113_663d1a4c9b_280.jpg
 4b413f,NA,Vans RV-7,Switzerland,NA
 4b419b,NA,RV-4,Switzerland,https://t.plnspttrs.net/46594/1125996_d8852b41b5_280.jpg
@@ -201,18 +201,18 @@ ICAO24,call_sign,model,origin_country,photo_url
 4d02a5,NA,NA,Luxembourg,https://t.plnspttrs.net/22364/1343577_41833d096d_280.jpg
 4d02ab,NA,PC-XII 47,Luxembourg,https://t.plnspttrs.net/48364/1655067_4f6b5a5780_280.jpg
 4d02ad,NA,PC-XII 47E,Luxembourg,NA
-4d02b0,JFA10C,,Luxembourg,https://t.plnspttrs.net/07739/1744548_2c9e576d9e_280.jpg
+4d02b0,NA,NA,Luxembourg,https://t.plnspttrs.net/07739/1744548_2c9e576d9e_280.jpg
 4d02b7,NA,NA,Luxembourg,https://t.plnspttrs.net/21895/1754911_0714c18710_280.jpg
-4d02bc,JFA37Q,,Luxembourg,https://t.plnspttrs.net/14788/1876039_24ecb2daa0_280.jpg
+4d02bc,NA,NA,Luxembourg,https://t.plnspttrs.net/14788/1876039_24ecb2daa0_280.jpg
 4d02bd,NA,NA,Luxembourg,https://t.plnspttrs.net/25336/1812280_fed442fa97_280.jpg
-4d02bf,JFA43X,Pilatus PC-12 NGX,Luxembourg,https://t.plnspttrs.net/27745/1710421_e41aba3de3_280.jpg
+4d02bf,NA,Pilatus PC-12 NGX,Luxembourg,https://t.plnspttrs.net/27745/1710421_e41aba3de3_280.jpg
 4d02dc,NA,PC-12/47E NGX,Luxembourg,https://t.plnspttrs.net/10169/1843727_bcc55a7a5a_280.jpg
 4d02dd,NA,NA,Luxembourg,https://t.plnspttrs.net/29913/1896986_b6e827d72d_280.jpg
 4d02de,NA,NA,Luxembourg,https://t.plnspttrs.net/38685/810293_efe63e446b_280.jpg
 4d02e3,NA,NA,Luxembourg,https://t.plnspttrs.net/45644/1775284_8f68597e0d_280.jpg
 4d2016,NA,Pilatus PC-12 NGX,Malta,https://t.plnspttrs.net/25763/1857422_b8b79a6767_280.jpg
 4d217d,NA,NA,Malta,https://t.plnspttrs.net/33960/964648_9498cf2c53_280.jpg
-5004ea,T7AVB,NA,NA,NA
+5004ea,NA,NA,NA,NA
 502d29,NA,A220-300,Latvia,https://t.plnspttrs.net/05671/1859287_6eb33cfb76_280.jpg
 502d3e,NA,A220-300,Latvia,https://t.plnspttrs.net/08432/1865852_8b1b9745b5_280.jpg
 8964a1,NA,Boeing 777-300(ER),United Arab Emirates,https://t.plnspttrs.net/10977/1888024_5df5704d5c_280.jpg
